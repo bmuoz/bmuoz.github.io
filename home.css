@@ -252,13 +252,6 @@
   font-size: 20px;
   text-align: center;
 }
-.home-container06 {
-  width: 278px;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  display: grid;
-  grid-gap: var(--dl-space-space-twounits);
-  grid-template-columns: 1fr 1fr;
-}
 .home-image2 {
   width: 50%;
   height: 263px;
@@ -286,7 +279,7 @@
   justify-content: space-between;
   background-color: #d0d0d0;
 }
-.home-container07 {
+.home-container06 {
   flex: 1;
   width: 738px;
   display: flex;
@@ -322,7 +315,7 @@
   padding-bottom: var(--dl-space-space-fourunits);
   background-color: #d0d0d0;
 }
-.home-container08 {
+.home-container07 {
   width: 501px;
   height: 476px;
   display: flex;
@@ -339,7 +332,7 @@
   height: 157px;
   object-fit: cover;
 }
-.home-container09 {
+.home-container08 {
   width: 627px;
   height: 579px;
   display: flex;
@@ -355,7 +348,7 @@
   height: 244px;
   object-fit: cover;
 }
-.home-container10 {
+.home-container09 {
   width: 627px;
   height: 1225px;
   display: flex;
@@ -389,7 +382,7 @@
   padding-bottom: var(--dl-space-space-fourunits);
   background-color: #d0d0d0;
 }
-.home-container11 {
+.home-container10 {
   width: 627px;
   height: 579px;
   display: flex;
@@ -405,7 +398,7 @@
   height: 244px;
   object-fit: cover;
 }
-.home-container12 {
+.home-container11 {
   width: 627px;
   height: 579px;
   display: flex;
@@ -478,7 +471,7 @@
   flex-direction: row;
   padding-bottom: var(--dl-space-space-fourunits);
 }
-.home-container13 {
+.home-container12 {
   display: flex;
   max-width: 35%;
   align-items: flex-start;
@@ -501,7 +494,7 @@
   text-align: left;
   line-height: 1.6;
 }
-.home-container14 {
+.home-container13 {
   gap: var(--dl-space-space-oneandhalfunits);
   display: flex;
   align-items: flex-start;
@@ -724,9 +717,6 @@
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
-  .home-container06 {
-    grid-template-columns: 1fr;
-  }
   .home-details3 {
     align-items: center;
     padding-left: var(--dl-space-space-twounits);
@@ -734,7 +724,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  .home-container07 {
+  .home-container06 {
     align-items: center;
     justify-content: flex-start;
   }
@@ -809,7 +799,7 @@
     padding-right: var(--dl-space-space-twounits);
     flex-direction: column;
   }
-  .home-container13 {
+  .home-container12 {
     max-width: 100%;
     align-self: center;
     align-items: center;
