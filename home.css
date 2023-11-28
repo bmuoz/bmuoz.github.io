@@ -24,7 +24,7 @@
   justify-content: flex-start;
 }
 .feature-card-text {
-  font-family: "Contrail One";
+  font-family: "Raleway";
   font-weight: 600;
   line-height: 28px;
 }
@@ -139,7 +139,7 @@
 }
 .home-hero1 {
   width: 100%;
-  height: 602px;
+  height: 870px;
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
   min-height: auto;
@@ -164,14 +164,14 @@
   color: var(--dl-color-gray-white);
   max-width: 800px;
   text-align: center;
-  font-family: "Contrail One";
+  font-family: "Raleway";
   line-height: 1.6;
 }
 .home-hero-sub-heading {
   color: var(--dl-color-gray-white);
   font-size: 28px;
   text-align: center;
-  font-family: "Contrail One"; 
+  font-family: "Exo 2";
   line-height: 1.6;
 }
 .home-btn-group {
@@ -191,6 +191,7 @@
 }
 .home-details1 {
   width: 100%;
+  height: 600px;
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
@@ -208,32 +209,55 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.home-text03 {
-  color: var(--dl-color-primary1-blue80);
-  text-align: left;
-  font-family: "Contrail One";
-  margin-bottom: var(--dl-space-space-oneandhalfunits);
-}
 .home-details-heading {
   width: 80%;
-  text-align: left;
-  font-family: "Contrail One";
+  align-self: center;
+  text-align: center;
+  font-family: "Raleway";
   line-height: 1.6;
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
 .home-details-sub-heading {
   color: var(--dl-color-gray-800);
   font-size: 18px;
-  text-align: left;
+  text-align: center;
   line-height: 1.6;
   margin-bottom: var(--dl-space-space-twounits);
 }
-.home-details-image {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  margin-left: var(--dl-space-space-fourunits);
-  border-radius: var(--dl-radius-radius-round);
+.home-details2 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-fourunits);
+  justify-content: space-between;
+  background-color: #f9972d;
+}
+.home-container3 {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home-details-heading1 {
+  width: 80%;
+  align-self: center;
+  text-align: center;
+  font-family: "Raleway";
+  line-height: 1.6;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.home-details-sub-heading1 {
+  color: var(--dl-color-gray-800);
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: var(--dl-space-space-twounits);
 }
 .home-features {
   flex: 0 0 auto;
@@ -265,19 +289,19 @@
   padding-bottom: var(--dl-space-space-fourunits);
   justify-content: flex-start;
 }
-.home-container3 {
+.home-container4 {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
 }
-.home-text06 {
+.home-text11 {
   color: var(--dl-color-primary1-blue80);
-  font-family: "Contrail One";
+  font-family: "Raleway";
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
 .home-features-heading {
-  font-family: "Contrail One";
+  font-family: "Raleway";
   line-height: 1.6;
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
@@ -287,7 +311,7 @@
   text-align: center;
   line-height: 1.6;
 }
-.home-container4 {
+.home-container5 {
   width: 100%;
   display: grid;
   grid-gap: var(--dl-space-space-twounits);
@@ -324,7 +348,7 @@
 }
 .home-gallery-heading {
   text-align: center;
-  font-family: "Contrail One";
+  font-family: "Raleway";
   line-height: 1.6;
 }
 .home-gallery-sub-heading {
@@ -334,7 +358,7 @@
   padding-left: var(--dl-space-space-threeunits);
   padding-right: var(--dl-space-space-threeunits);
 }
-.home-container5 {
+.home-container6 {
   width: 100%;
   display: grid;
   grid-gap: var(--dl-space-space-unit);
@@ -365,7 +389,7 @@
 .home-banner-heading {
   color: var(--dl-color-gray-white);
   text-align: center;
-  font-family: "Contrail One";
+  font-family: "Raleway";
   line-height: 1.6;
 }
 .home-banner-sub-heading {
@@ -418,30 +442,30 @@
   flex-direction: row;
   padding-bottom: var(--dl-space-space-fourunits);
 }
-.home-container6 {
+.home-container7 {
   display: flex;
   max-width: 35%;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
 }
-.home-text09 {
+.home-text14 {
   color: var(--dl-color-primary1-blue80);
-  font-family: "Contrail One";
+  font-family: "Raleway";
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
-.home-text12 {
-  font-family: "Contrail One";
+.home-text17 {
+  font-family: "Raleway";
   line-height: 1.6;
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
-.home-text13 {
+.home-text18 {
   color: var(--dl-color-gray-800);
   font-size: 18px;
   text-align: left;
   line-height: 1.6;
 }
-.home-container7 {
+.home-container8 {
   gap: var(--dl-space-space-oneandhalfunits);
   display: flex;
   align-items: flex-start;
@@ -492,6 +516,21 @@
     padding-left: var(--dl-space-space-threeunits);
     padding-right: var(--dl-space-space-threeunits);
   }
+  .home-text03 {
+    text-align: center;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+  }
+  .home-details-sub-heading1 {
+    text-align: center;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+  }
+  .home-text07 {
+    text-align: center;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+  }
   .home-features-sub-heading {
     text-align: center;
     padding-left: var(--dl-space-space-threeunits);
@@ -500,13 +539,13 @@
   .home-gallery-sub-heading {
     text-align: center;
   }
-  .home-container5 {
+  .home-container6 {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .home-banner-sub-heading {
     max-width: 100%;
   }
-  .home-text13 {
+  .home-text18 {
     text-align: center;
     padding-left: var(--dl-space-space-threeunits);
     padding-right: var(--dl-space-space-threeunits);
@@ -532,9 +571,6 @@
     align-items: center;
     justify-content: flex-start;
   }
-  .home-text03 {
-    text-align: center;
-  }
   .home-details-heading {
     text-align: center;
   }
@@ -543,9 +579,34 @@
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
-  .home-details-image {
-    margin-top: var(--dl-space-space-threeunits);
-    margin-left: 0px;
+  .home-text03 {
+    text-align: center;
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .home-details2 {
+    align-items: center;
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-container3 {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .home-details-heading1 {
+    text-align: center;
+  }
+  .home-details-sub-heading1 {
+    text-align: center;
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .home-text07 {
+    text-align: center;
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
   }
   .home-features1 {
     padding-left: var(--dl-space-space-twounits);
@@ -555,7 +616,7 @@
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
-  .home-container4 {
+  .home-container5 {
     grid-template-columns: 1fr;
   }
   .home-gallery1 {
@@ -566,7 +627,7 @@
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
-  .home-container5 {
+  .home-container6 {
     grid-template-columns: 1fr 1fr;
   }
   .home-banner1 {
@@ -582,13 +643,13 @@
     padding-right: var(--dl-space-space-twounits);
     flex-direction: column;
   }
-  .home-container6 {
+  .home-container7 {
     max-width: 100%;
     align-self: center;
     align-items: center;
     justify-content: center;
   }
-  .home-text13 {
+  .home-text18 {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
@@ -619,7 +680,7 @@
   .home-gallery1 {
     padding: var(--dl-space-space-unit);
   }
-  .home-container5 {
+  .home-container6 {
     grid-template-columns: 1fr;
   }
   .home-banner1 {
