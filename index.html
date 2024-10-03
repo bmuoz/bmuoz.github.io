@@ -1,502 +1,118 @@
-<div>
-  <link href="./home.css" rel="stylesheet" />
-  <div class="home-container">
-    <div class="home-header"></div>
-    <div class="home-hero">
-      <div class="home-hero1">
-        <div class="home-container01">
-          <h1 class="home-hero-heading heading1">
-            Resultados de Investigación
-          </h1>
-          <span class="home-hero-sub-heading">
-            <span>
-              Correlación entre las condiciones climáticas y la ocurrencia de
-              incendios forestales en Chile:
-            </span>
-            <br />
-            <span>
-              Un análisis de las temperaturas y precipitaciones diarias.
-            </span>
-          </span>
-          <div class="home-btn-group"></div>
-        </div>
-      </div>
-    </div>
-    <div class="home-details">
-      <div class="home-details1">
-        <div class="home-container02">
-          <h2 class="home-details-heading heading2">
-            ¿Qué nos motiva a realizar este proyecto?
-          </h2>
-          <span class="home-details-sub-heading">
-            <span class="home-text003">
-              Las motivaciones de esta investigación surgen de la alza en el
-              número de
-            </span>
-            <br />
-            <span>
-              incendios forestales que viene experimentando Chile a través de
-              los últimos años.  En respuesta a esto, queremos evaluar qué
-              estrategias debemos tener en consideración para hacer frente a
-              estos desastres. Con ayuda de los datos, queremos identificar
-              patrones, comportamientos y tendencias que nos permitan predecir
-              bajo qué circunstancias meteorológicas podría generarse un nuevo
-              siniestro. Las intenciones están en minimizar las pérdidas de
-              grandes reservas de flora y fauna, prevenir el empobrecimento en
-              la calidad del aire y evitar posibles daños estructurales  y 
-              consecuencias en la salud de los humanos.
-            </span>
-            <br />
-          </span>
-        </div>
-      </div>
-    </div>
-    <div class="home-details2">
-      <div class="home-container03">
-        <h2 class="home-details-heading1 heading2">Enfoque de estudio</h2>
-        <span class="home-details-sub-heading1">
-          <span>
-            Durante la última década han dado que hablar la gran cantidad de
-            distintos focos de incendio en la zona sur del país. Por este
-            motivo,  hemos decidido tomar datos provenientes de distintas
-            estaciones meteorológicas repartidas entre la VI Región de
-            O&apos;Higgins hasta la X Región de Los Lagos, cada una
-            representando a su región correspondiente. Además, se han tomado los
-            datos registrados entre enero de 2012 y diciembre de 2018.
-          </span>
-          <br />
-        </span>
-      </div>
-    </div>
-    <img
-      alt="image"
-      src="https://cooperativa.cl/noticias/site/artic/20220712/imag/foto_0000000920220712141345.jpg"
-      class="home-image"
-    />
-    <div class="home-features">
-      <div class="home-features-container">
-        <div class="home-features1">
-          <div class="home-container04">
-            <h2 class="home-features-heading heading2">Metodología y datos</h2>
-            <span class="home-features-sub-heading">
-              <span class="home-text009">
-                Para el desarrollo del proyecto hemos trabajado en Python, con
-                librerías útiles para data science como lo pueden ser Numpy,
-                Pandas, Matplotlib, Seaborn, SKlearn, etc. Todo esto es puesto a
-                disposición en un archivo tipo Jupyter Notebook.
-              </span>
-              <br />
-              <br />
-              <span>
-                Tomaremos datos relacionados con las temperaturas,
-                precipitaciones y vientos, provenientes del Observatorio de
-                Cambio Climático, dirigido por el Ministerio de Ciencia,
-                Tecnología, Conocimiento e Innovación:
-                https://occ.minciencia.gob.cl/#/
-              </span>
-              <br />
-              <br />
-              <span>
-                Otra fuente de datos proviene del Instituto para la Resiliencia
-                ante Desastres (Itrend) y se enfoca en registros históricos de
-                incendios forestales proporcionados por la Corporación Nacional
-                Forestal (CONAF):
-                https://www.plataformadedatos.cl/catalog/categories/HAZARD/Incendio%20forestal/Registro%20hist%C3%B3rico%20de%20incendios
-              </span>
-              <br />
-              <br />
-              <span>
-                Finalmente, del sitio de IDE Chile (Infraestructura de Datos
-                Espaciales), tomamos los archivos para poder representar nuestro
-                territorio de manera geoespacial según lo estipulado: 
-                https://www.ide.cl
-              </span>
-              <br class="home-text019" />
-              <br />
-              <span> </span>
-              <br />
-            </span>
-          </div>
-          <span class="home-text023">
-            <span class="home-text024">
-              Para darle forma a estos datos, necesitamos seguir todo un
-              procedimiento. Luego de extraerlos, los cargarmos a Jupyter,
-              revisamos si están bien definidos (sin nulos o outliners) para
-              después hacer una limpieza de datos y dejar sólo los que serán
-              cruciales para el estudio. 
-            </span>
-            <br />
-            <br />
-            <span>
-              Con esta etapa finalizada, procedemos a hacernos distintas
-              preguntas de investigación que nos lleven a contestar la pregunta
-              general. Para esto, acomodamos los datos en dataframes (tablas)
-              según corresponda. Gracias a esto tenemos datos interpretables y
-              fáciles de graficar, para obtener conclusiones al respecto.
-            </span>
-            <br />
-            <br />
-            <span>
-              Además, es posible realizar modelos predictivos con SKlearn.  Por
-              ejemplo, vimos qué tan esparcidos estarían los datos predecidos a
-              partit de la cantidad de incendios respecto a las temperaturas
-              máximas del lugar.
-            </span>
-            <br />
-          </span>
-          <div class="home-container05">
-            <img
-              alt="image"
-              src="https://i.imgur.com/nnwAE9j.png"
-              class="home-image1"
-            />
-            <span class="home-text032">
-              Este es un ejemplo de un resultado que veremos en la
-              investigación: cantidad de incendios por región y año.
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img
-      alt="image"
-      src="https://i0.wp.com/prometeusgs.com/wp-content/uploads/2019/02/cultura-basada-en-datos.jpg?fit=1024%2C512&amp;ssl=1 "
-      class="home-image2"
-    />
-    <div class="home-pricing"></div>
-    <div class="home-details3">
-      <div class="home-container06">
-        <h2 class="home-details-heading2 heading2">
-          Preguntas de Investigación
-        </h2>
-        <span class="home-details-sub-heading2">
-          <span>
-            Subdividimos la gran pregunta que da nombre a nuestro proyecto en 5
-            preguntas más abordales, de las cuales tomaremos conclusiones para
-            cada una:
-          </span>
-          <br />
-          <br />
-          <span>
-            1.¿Existe una correlación entre las altas temperaturas y un aumento
-            en la ocurrencia de incendios forestales?
-          </span>
-          <br />
-          <br />
-          <span>
-            2. ¿Hay una correlación negativa entre las precipitaciones y los
-            incendios?
-          </span>
-          <br />
-          <br />
-          <span>
-            3. ¿Existen umbrales de temperatura o precipitación que, cuando se
-            superan, aumentan la probabilidad de incendios forestales?
-          </span>
-          <br />
-          <br />
-          <span>
-            4. ¿Hay una correlacion entre el viento y un aumento significativo
-            del riesgo de incendios forestales?
-          </span>
-          <br />
-          <br />
-          <span>
-            5. ¿Se pueden identificar patrones de incendios forestales a lo
-            largo del año en relación con las condiciones climáticas, lo que
-            podría guiar la planificación de estrategias de prevención y
-            respuesta?
-          </span>
-          <br />
-        </span>
-      </div>
-    </div>
-    <div class="home-details4">
-      <div class="home-container07">
-        <span class="home-text050">
-          <span>
-            La primera pregunta la contestamos por año. Para cada uno,
-            visualizamos gráficamente la ocurrencia de incendios forestales y
-            los promedios de temperaturas máximas, para cada estación.
-          </span>
-          <br />
-          <span>
-            Luego, terminamos por comparar cada uno de estos elementos frente a
-            frente, lo que nos llevó a la conclusión de que no había una
-            correlación clara en ninguna región. Los números no nos mienten, ya
-            que nos indican que tenemos una baja correlación, cercana a 0.
-          </span>
-          <br />
-          <br />
-          <span>
-            En el gráfico de abajo se puede apreciar la diferencia entre los
-            gráficos obtenidos para la región de Los Lagos.
-          </span>
-          <br />
-          <br />
-        </span>
-        <img
-          alt="image"
-          src="https://i.imgur.com/tsm6nMw.png"
-          class="home-image3"
-        />
-      </div>
-      <div class="home-container08">
-        <span class="home-text059">
-          <span>
-            La segunda pregunta, a pesar de haber tomado los datos diarios,
-            tampoco nos llevó a una gran relación entre la cantidad de incendios
-            y condiciones climáticas. Podemos concluir que las precipitaciones
-            no necesariamente significan una reducción en el fuego.
-          </span>
-          <br />
-          <br />
-          <span>
-            En el gráfico de abajo se ve la relación entre las precipitaciones y
-            la cantidad de incendios.
-          </span>
-          <br />
-          <br />
-        </span>
-        <img
-          alt="image"
-          src="https://i.imgur.com/aG4zpv8.png"
-          class="home-image4"
-        />
-      </div>
-      <div class="home-container09">
-        <span class="home-text066">
-          <span>
-            El panorama es distinto en la pregunta 3, ya que, tras un análisis
-            más detallado, se pueden observar rangos en las precipitaciones y en
-            las temperaturas máximas donde los incendios son más recurrentes.
-            Específicamente, entre los 20 y 25 grados celcius la frecuencia de
-            incendios es mucho mayor, lo que también ocurre cuando se registran
-            menos de 100mm de agua caída mensual.
-          </span>
-          <br />
-          <br />
-          <span>
-            En el gráfico de abajo se puede ver cómo se distribuyen los
-            incendios según las temperaturas por región, tomando mediciones
-            diarias. Más abajo, se pueden comparar según la cantidad de agua
-            caída.
-          </span>
-          <br />
-          <br />
-        </span>
-        <img
-          alt="image"
-          src="https://i.imgur.com/gsBvJ1J.png"
-          class="home-image5"
-        />
-        <img
-          alt="image"
-          src="https://i.imgur.com/rQ2dL54.png"
-          class="home-image6"
-        />
-      </div>
-    </div>
-    <div class="home-details5">
-      <div class="home-container10">
-        <span class="home-text073">
-          <span>
-            El viento tampoco es un determinante significativo en la ocurrencia
-            de incendios. Al procesar los datos correspondientes, obtenemos una
-            correlación muy cercana a 0, por lo que  la velocidad del viento no
-            explica de manera significativa las variaciones en la frecuencia de
-            incendios.
-          </span>
-          <br />
-          <br />
-          <span>
-            Abajo se puede apreciar la relación entre velocidades del viento e
-            incendios.
-          </span>
-          <br />
-          <br />
-        </span>
-        <img
-          alt="image"
-          src="https://i.imgur.com/BtowrvW.png"
-          class="home-image7"
-        />
-      </div>
-      <div class="home-container11">
-        <span class="home-text080">
-          <span>
-            En la última pregunta, los gráficos se explican por sí solos: es muy
-            evidente la alza en los incendios forestales en la temporada de
-            verano, para todas las regiones estudiadas. Gracias a esto, podemos
-            llamar a reforzar el combate contra el fuego y a destinar más
-            recursos para estos sectores.
-          </span>
-          <br />
-          <br />
-          <span>
-            En el gráfico de abajo se muestra la relación enre los incendios y
-            su fecha de inicio.
-          </span>
-          <br />
-          <br />
-        </span>
-        <img
-          alt="image"
-          src="https://i.imgur.com/Ggxak3E.png"
-          class="home-image8"
-        />
-      </div>
-    </div>
-    <div class="home-gallery">
-      <div class="home-gallery1">
-        <h1 class="home-gallery-heading heading2">Resultados del proyecto</h1>
-        <span class="home-gallery-sub-heading">
-          <span class="home-text087">
-            Tras todo este análisis exploratorio, podemos concluir que la
-            correlación de fenómenos climáticos sobre los incendios forestales
-            es distinta sobre cada condición climática estudiada:
-          </span>
-          <br class="home-text088" />
-          <br class="home-text089" />
-          <span class="home-text090">
-            Con baja correlación: Mientras más lluvias hay, menor es la cantidad
-            de incendios.
-          </span>
-          <br class="home-text091" />
-          <br class="home-text092" />
-          <span class="home-text093">
-            Con baja correlación: Mientras más vientos hay, mayor es la cantidad
-            de incendios.
-          </span>
-          <br class="home-text094" />
-          <br class="home-text095" />
-          <span class="home-text096">
-            Con alta correlación: A mayor temperatura, mayor es la cantidad de
-            incendios (por mes).
-          </span>
-          <br class="home-text097" />
-          <br class="home-text098" />
-          <span class="home-text099">
-            Además, descubrimos que la correlación es baja si comparamos las
-            temperaturas con incendios a rangos anuales, que se relacionan
-            bastante las épocas del año con la frecuencia de incendios, y que se
-            pueden tomar medidas cuando las precipitaciones y las temperaturas
-            están cerca de ciertos intervalos.
-          </span>
-        </span>
-      </div>
-    </div>
-    <div class="home-faq">
-      <div class="home-container12">
-        <span class="home-text100 sectionTitle">
-          <span>discusión</span>
-          <br />
-        </span>
-        <h2 class="home-text103 heading2">
-          <span>Para</span>
-          <br />
-          <span>concluir</span>
-          <br />
-        </h2>
-        <span class="home-text108">
-          <span>Here are some of the most common questions that we get.</span>
-          <br />
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </div>
-      <div class="home-container13">
-        <div class="question-container">
-          <span class="question-text heading4">
-            <span>Problemas éticos</span>
-          </span>
-          <span class="question-text1">
-            <span>
-              Diversos temas éticos surgen luego de los resultados de este
-              proyecto, como una distribución correcta de recursos preventivos
-              (principalmente sobre zonas vulnerables), la consideración de
-              factores microclimáticos o condiciones específicas de ciertas
-              áreas geográficas, y el cuidado de no incluir datos sensibles en
-              la investigación. Todo esto con el fin de garantizar que las
-              recomendaciones y estrategias derivadas sean justas, equitativas y
-              consideren el impacto en todas las comunidades involucradas.
-            </span>
-          </span>
-        </div>
-        <div class="question-container">
-          <span class="question-text heading4">
-            <span>Fuentes de error</span>
-          </span>
-          <span class="question-text1">
-            <span>
-              Un gran problema de esta investigación es la limitación en la
-              cantidad de estaciones meteorológicas, ya que no se puede obtener
-              información precisa de todos los rincones de cada región, por lo
-              que pueden variar considerablemente las condiciones climáticas
-              entre dos puntos. Dentro de esta categoría de errores también es
-              importante mencionar la imprecisión que nos otorgaron los datos
-              inconsistentes y nulos, así como la falta de información en la
-              magnitud y en el nivel de destrucción de cada foco de incendio.
-            </span>
-          </span>
-        </div>
-        <div class="question-container">
-          <span class="question-text heading4">
-            <span>¿Cómo es el futuro de el proyecto?</span>
-          </span>
-          <span class="question-text1">
-            <span>
-              No será de mayor complicación poder extender esta investigación
-              para poder trabajar con datos de todo el país, para mayor alcance,
-              y con datos de más años, para mayor precisión. Aunque es
-              importante recalcar que el cambio climático está cambiando
-              constantemente la normalidad en los fenómenos climáticos, por lo
-              que es probable que los resultados de este proyecto varíen en un
-              par de años.
-            </span>
-          </span>
-        </div>
-        <div class="question-container">
-          <span class="question-text heading4">
-            <span>No es culpa de la naturaleza</span>
-          </span>
-          <span class="question-text1">
-            <span>
-              No debemos olvidar que la principal causa de incendios es debido a
-              la actividad humana. Según CONAF, "El 99,7% de los incendios se
-              inician ya sea por descuidos o negligencias en la manipulación de
-              fuentes de calor, o por prácticas agrícolas o por intencionalidad,
-              originada en motivaciones de distinto tipo, incluso la delictiva".
-              El propósito de este proyecto no es identificar a la naturaleza
-              como causante. Más bien, las intenciones están solamente en
-              observar incidencias o correlaciones respecto a las condiciones
-              climáticas.
-            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-    <div class="home-banner">
-      <div class="home-banner1">
-        <h1 class="home-banner-heading heading2">
-          <span>Abajo se encuentra una mejor</span>
-          <br />
-          <span>visualización de la página</span>
-          <br />
-          <br />
-          <span>https://focused-masculine-hare-12noep.teleporthq.app/</span>
-          <br />
-        </h1>
-      </div>
-    </div>
-    <div class="home-faq1"><div class="home-faq-container"></div></div>
-    <div class="home-footer"><footer class="home-footer1"></footer></div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas de Cole Palmer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Cargar Plotly.js desde CDN -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
 
+    <!-- Encabezado -->
+    <header>
+        <h1>Estadísticas de Cole Palmer</h1>
+        <p>Jugadas clave, goles y asistencias de la joven estrella</p>
+    </header>
+
+    <!-- Sección de información básica -->
+    <section class="info-jugador">
+        <h2>Información del Jugador</h2>
+        <ul>
+            <li><strong>Nombre:</strong> Cole Palmer</li>
+            <li><strong>Edad:</strong> 21 años</li>
+            <li><strong>Posición:</strong> Extremo</li>
+            <li><strong>Club:</strong> Chelsea F.C.</li>
+        </ul>
+    </section>
+
+    <!-- Gráfico de estadísticas usando Plotly.js -->
+    <section class="graficos">
+        <h2>Estadísticas de Goles y Asistencias</h2>
+        <div id="grafico-estadisticas" style="width: 100%; height: 500px;"></div>
+    </section>
+
+    <!-- Gráfico de SVG personalizado -->
+    <section class="svg-section">
+        <h2>Rendimiento por Partido (SVG)</h2>
+        <svg id="svg-rendimiento" width="500" height="300" viewBox="0 0 500 300">
+            <!-- Eje X -->
+            <line x1="50" y1="250" x2="450" y2="250" stroke="black" stroke-width="2"/>
+            <!-- Eje Y -->
+            <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="2"/>
+            <!-- Título del gráfico -->
+            <text x="200" y="40" fill="black" font-size="16">Rendimiento por Partido</text>
+            <!-- Líneas de rendimiento -->
+            <polyline points="50,200 150,180 250,150 350,120 450,100" fill="none" stroke="blue" stroke-width="3"/>
+            <!-- Etiquetas de los partidos -->
+            <text x="40" y="270" fill="black">Partido 1</text>
+            <text x="140" y="270" fill="black">Partido 2</text>
+            <text x="240" y="270" fill="black">Partido 3</text>
+            <text x="340" y="270" fill="black">Partido 4</text>
+            <text x="440" y="270" fill="black">Partido 5</text>
+        </svg>
+    </section>
+
+    <!-- Script de Plotly.js para crear los gráficos -->
+    <script src="app.js"></script>
+    
+    <section class="svg-section">
+        <h2>Rendimiento por Partido (SVG)</h2>
+        <svg id="svg-rendimiento" width="500" height="300" viewBox="0 0 500 300">
+            <!-- Eje X -->
+            <line x1="50" y1="250" x2="450" y2="250" stroke="black" stroke-width="2"/>
+            <!-- Eje Y -->
+            <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="2"/>
+            <!-- Título del gráfico -->
+            <text x="200" y="40" fill="black" font-size="16">Rendimiento por Partido</text>
+            <!-- Círculos que representan los puntos del gráfico -->
+            <image href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrCV610snHSVITuTaTMdt7ZTUQgDpFbVN7O11XfewrhZ8MaKNG" x="50" y="200" height="50px" width="20px"/>
+            <image href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrCV610snHSVITuTaTMdt7ZTUQgDpFbVN7O11XfewrhZ8MaKNG" x="150" y="180" height="50px" width="20px"/>
+            <image href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrCV610snHSVITuTaTMdt7ZTUQgDpFbVN7O11XfewrhZ8MaKNG" x="250" y="150" height="50px" width="20px"/>
+            <image href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrCV610snHSVITuTaTMdt7ZTUQgDpFbVN7O11XfewrhZ8MaKNG" x="350" y="120" height="50px" width="20px"/>
+            <image href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrCV610snHSVITuTaTMdt7ZTUQgDpFbVN7O11XfewrhZ8MaKNG" x="450" y="100" height="50px" width="20px"/>
+            <!-- Etiquetas de los partidos -->
+            <text x="40" y="270" fill="black">Partido 1</text>
+            <text x="140" y="270" fill="black">Partido 2</text>
+            <text x="240" y="270" fill="black">Partido 3</text>
+            <text x="340" y="270" fill="black">Partido 4</text>
+            <text x="440" y="270" fill="black">Partido 5</text>
+            <!-- Formas adicionales (ejemplo de un balón) -->
+            <circle cx="460" cy="50" r="20" fill="white" stroke="black" stroke-width="3"/>
+            <line x1="460" y1="30" x2="460" y2="70" stroke="black" stroke-width="2"/>
+            <line x1="440" y1="50" x2="480" y2="50" stroke="black" stroke-width="2"/>
+        </svg>
+    </section>
+
+    <section class="svg-section">
+        <h2>Rendimiento por Partido (SVG)</h2>
+        <svg id="svg-rendimiento" width="500" height="300" viewBox="0 0 500 300">
+            <!-- Eje X -->
+            <line x1="50" y1="250" x2="450" y2="250" stroke="black" stroke-width="2"/>
+            <!-- Eje Y -->
+            <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="2"/>
+            <!-- Título del gráfico -->
+            <text x="200" y="40" fill="black" font-size="16">Rendimiento por Partido</text>
+            <!-- Imágenes SVG insertadas directamente -->
+            <image href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrCV610snHSVITuTaTMdt7ZTUQgDpFbVN7O11XfewrhZ8MaKNG" x="430" y="30" height="40px" width="40px"/>
+            <!-- Líneas de rendimiento -->
+            <polyline points="50,200 150,180 250,150 350,120 450,100" fill="none" stroke="blue" stroke-width="3"/>
+            <!-- Etiquetas de los partidos -->
+            <text x="40" y="270" fill="black">Partido 1</text>
+            <text x="140" y="270" fill="black">Partido 2</text>
+            <text x="240" y="270" fill="black">Partido 3</text>
+            <text x="340" y="270" fill="black">Partido 4</text>
+            <text x="440" y="270" fill="black">Partido 5</text>
+        </svg>
+    </section>
+
+    
+    <section class="svg-section">
+        <h2>Estadísticas visuales de Cole Palmer</h2>
+        <!-- SVG de un balón de fútbol desde una URL -->
+        <img src="https://media.tenor.com/54E7MfuxCeUAAAAM/cole-palmer-cold-palmer.gif" alt="Icono de balón de fútbol" width="500" height="500"/>
+    </section>
+    
+</body>
+</html>
