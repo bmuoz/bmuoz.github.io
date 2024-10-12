@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceso a Internet en Latinoamérica</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
-
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <style>
         body {
             background-color: #919191;
@@ -25,7 +24,7 @@
 
         .logo {
             font-family: 'Segoe UI', sans-serif;
-            font-size: 35px;
+            font-size: 2em; /* Aumentado para mayor visibilidad */
         }
 
         .link-button {
@@ -41,26 +40,8 @@
         }
 
         .link-button img {
-            width: 100%;
-            height: auto; 
-        }
-
-        .link-button {
-            background-color: #ffffff;
-            border: 2px solid #007bff;
-            color: #007bff;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 8px;
-            font-weight: bold;
-            display: inline-block;
-            text-align: center;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .link-button:hover {
-            background-color: #007bff;
-            color: #ffffff;
+            width: 40px; /* Tamaño fijo para la imagen */
+            height: 40px; /* Tamaño fijo para la imagen */
         }
 
         .main-content {
@@ -105,15 +86,18 @@
             background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
-            flex: 1;
+            flex: 2; /* Aumentado para que el cuadro de texto ocupe más espacio */
+            min-width: 300px; /* Ancho mínimo */
+            max-width: 600px; /* Ancho máximo */
         }
 
         .vector-image {
-            flex: 1;
-            height: auto;
-            max-height: 400px; /* Ajusta la altura máxima de las imágenes */
-            object-fit: cover;
+            width: 100%; /* Ajusta al 100% del contenedor */
+            height: auto; /* Mantiene la proporción */
+            max-height: 400px; /* Ajusta la altura máxima */
+            object-fit: cover; /* Asegura que la imagen cubra el contenedor */
             border-radius: 8px;
+            flex: 1; /* Asegura que la imagen no ocupe mucho espacio */
         }
 
         .footer-links a {
@@ -133,6 +117,7 @@
             border-radius: 8px;
             text-align: center;
             color: #ffffff;
+            font-size: 1em; /* Tamaño de fuente consistente */
         }
 
         .data-button {
@@ -143,9 +128,9 @@
 </head>
 <body>
 <header>
-    <div class="logo" style="font-family: 'Roboto Slab', serif; font-size: 2em; font-weight: bold;">🌐 Acceso al internet en América Latina 🌐</div>
+    <div class="logo">🌐 Acceso al internet en América Latina 🌐</div>
     <a href="https://github.com/bmuoz/bmuoz.github.io" target="_blank" class="link-button">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Fuente" style="width: 100%; height: auto;">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Fuente">
     </a>
 </header>
   
