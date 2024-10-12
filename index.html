@@ -4,11 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceso a Internet en Latinoamérica</title>
-    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 
+    <style>
+        body {
+            background-color: #919191;
+            font-family: 'Raleway';
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .logo {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 35px;
+        }
+
+        .link-button {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-left: auto;
+            margin-right: 0;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .link-button img {
+            width: 100%;
+            height: auto; 
+        }
+
+        .link-button {
+            background-color: #ffffff;
+            border: 2px solid #007bff;
+            color: #007bff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .link-button:hover {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        .main-content {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .sidebar {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+
+        .content {
+            flex-grow: 1;
+        }
+
+        #chart-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .info-images-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #d1d1d1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .info-boxes {
+            display: flex;
+            gap: 20px;
+        }
+
+        .info-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+        }
+
+        .vector-image {
+            flex: 1;
+            height: auto;
+            max-height: 400px; /* Ajusta la altura máxima de las imágenes */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .footer-links a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .footer-links {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333333; /* Gris oscuro del footer */
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .data-button {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -18,60 +149,59 @@
     </a>
 </header>
   
-    
-    <section class="main-content">
-        <div class="sidebar">
-            <h2>Índice</h2>
-            <p>Explora las características del acceso a internet en países de Latinoamérica.</p>
-            <ul>
-                <li><a href="#chart-container">Ver gráfico</a></li>
-                <li><a href="#info-adicional">Información Adicional</a></li>
-                <li><a href="#mas-detalles">Más detalles</a></li>
-            </ul>
+<section class="main-content">
+    <div class="sidebar">
+        <h2>Índice</h2>
+        <p>Explora las características del acceso a internet en países de Latinoamérica.</p>
+        <ul>
+            <li><a href="#chart-container">Ver gráfico</a></li>
+            <li><a href="#info-adicional">Información Adicional</a></li>
+            <li><a href="#mas-detalles">Más detalles</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Introducción</h1>
+        <p>Descubre cómo ha evolucionado la velocidad de internet en Latinoamérica.</p>
+        <div id="chart-container">
+            <div id="chart"></div>
         </div>
-        <div class="content">
-            <h1>Introducción</h1>
-            <p>Descubre cómo ha evolucionado la velocidad de internet en Latinoamérica.</p>
-            <div id="chart-container">
-                <div id="chart"></div>
+        <div class="info-images-container">
+            <div class="info-boxes" id="info-adicional">
+                <div class="info-box">
+                    <h2>Información Adicional</h2>
+                    <p>La velocidad de internet ha mejorado en los últimos años en la mayoría de los países de la región. Sin embargo, la disponibilidad y calidad del servicio varían significativamente.</p>
+                    <p>Este gráfico muestra un análisis de la velocidad de banda ancha promedio en diferentes países de Latinoamérica.</p>
+                </div>
+                <img src="https://concepto.de/wp-content/uploads/2024/06/internet.jpg" alt="Ilustración de conexión a internet" class="vector-image">
             </div>
-            <div class="info-images-container">
-                <div class="info-boxes" id="info-adicional">
-                    <div class="info-box">
-                        <h2>Información Adicional</h2>
-                        <p>La velocidad de internet ha mejorado en los últimos años en la mayoría de los países de la región. Sin embargo, la disponibilidad y calidad del servicio varían significativamente.</p>
-                        <p>Este gráfico muestra un análisis de la velocidad de banda ancha promedio en diferentes países de Latinoamérica.</p>
-                    </div>
-                    <img src="https://concepto.de/wp-content/uploads/2024/06/internet.jpg" alt="Ilustración de conexión a internet" class="vector-image">
+            <div class="info-boxes" id="mas-detalles">
+                <div class="info-box">
+                    <h2>Más Detalles</h2>
+                    <p>El desarrollo de la infraestructura de internet es clave para reducir la brecha digital. La expansión de la conectividad sigue siendo un desafío en áreas rurales.</p>
+                    <p>Conoce más sobre estos datos en la fuente oficial.</p>
+                    <a class="data-button" href="https://data.worldbank.org/" target="_blank">Ver datos en World Bank</a>
                 </div>
-                <div class="info-boxes" id="mas-detalles">
-                    <div class="info-box">
-                        <h2>Más Detalles</h2>
-                        <p>El desarrollo de la infraestructura de internet es clave para reducir la brecha digital. La expansión de la conectividad sigue siendo un desafío en áreas rurales.</p>
-                        <p>Conoce más sobre estos datos en la fuente oficial.</p>
-                        <a class="data-button" href="https://data.worldbank.org/" target="_blank">Ver datos en World Bank</a>
-                    </div>
-                    <img src="https://enlinea.santotomas.cl/web/wp-content/uploads/sites/2/2018/05/chile-internet-744x445.jpg" alt="Ilustración de conectividad global" class="vector-image">
-                </div>
+                <img src="https://enlinea.santotomas.cl/web/wp-content/uploads/sites/2/2018/05/chile-internet-744x445.jpg" alt="Ilustración de conectividad global" class="vector-image">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <div class="footer-links">
-            <a href="#">Hola</a>
-            <a href="#">Como</a>
-            <a href="#">Estas</a>
-            <a href="#">Bien</a>
-            <a href="#">Y tu</a>
-            <a href="#">Bien tambien</a>
-            <a href="#">Que bueno</a>
-            <a href="#">Bueno adios</a>
-            <a href="#">Adios</a>
-        </div>
-        <p>&copy; 2024 Acceso a Internet en Latinoamérica. Todos los derechos reservados.</p>
-    </footer>
+<footer>
+    <div class="footer-links">
+        <a href="#">Hola</a>
+        <a href="#">Como</a>
+        <a href="#">Estas</a>
+        <a href="#">Bien</a>
+        <a href="#">Y tu</a>
+        <a href="#">Bien tambien</a>
+        <a href="#">Que bueno</a>
+        <a href="#">Bueno adios</a>
+        <a href="#">Adios</a>
+    </div>
+    <p>&copy; 2024 Acceso a Internet en Latinoamérica. Todos los derechos reservados.</p>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
