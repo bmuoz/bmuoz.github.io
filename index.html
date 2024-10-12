@@ -3,116 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estadísticas de Cole Palmer</title>
+    <title>Acceso a Internet en Latinoamérica</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Cargar Plotly.js desde CDN -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-
-    <!-- Encabezado -->
-    <header>
-        <h1>Estadísticas de Cole Palmer</h1>
-        <p>Jugadas clave, goles y asistencias de la joven estrella</p>
-    </header>
-
-    <!-- Sección de información básica -->
-    <section class="info-jugador">
-        <h2>Información del Jugador</h2>
-        <ul>
-            <li><strong>Nombre:</strong> Cole Palmer</li>
-            <li><strong>Edad:</strong> 21 años</li>
-            <li><strong>Posición:</strong> Extremo</li>
-            <li><strong>Club:</strong> Chelsea F.C.</li>
-        </ul>
-    </section>
-
-    <!-- Gráfico de estadísticas usando Plotly.js -->
-    <section class="graficos">
-        <h2>Estadísticas de Goles y Asistencias</h2>
-        <div id="grafico-estadisticas" style="width: 100%; height: 500px;"></div>
-    </section>
-
-    <!-- Gráfico de SVG personalizado -->
-    <section class="svg-section">
-        <h2>Rendimiento por Partido (SVG)</h2>
-        <svg id="svg-rendimiento" width="500" height="300" viewBox="0 0 500 300">
-            <!-- Eje X -->
-            <line x1="50" y1="250" x2="450" y2="250" stroke="black" stroke-width="2"/>
-            <!-- Eje Y -->
-            <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="2"/>
-            <!-- Título del gráfico -->
-            <text x="200" y="40" fill="black" font-size="16">Rendimiento por Partido</text>
-            <!-- Líneas de rendimiento -->
-            <polyline points="50,200 150,180 250,150 350,120 450,100" fill="none" stroke="blue" stroke-width="3"/>
-            <!-- Etiquetas de los partidos -->
-            <text x="40" y="270" fill="black">Partido 1</text>
-            <text x="140" y="270" fill="black">Partido 2</text>
-            <text x="240" y="270" fill="black">Partido 3</text>
-            <text x="340" y="270" fill="black">Partido 4</text>
-            <text x="440" y="270" fill="black">Partido 5</text>
-        </svg>
-    </section>
-
-    <!-- Script de Plotly.js para crear los gráficos -->
-    <script src="app.js"></script>
+<header>
+    <div class="logo" style="font-family: 'Roboto Slab', serif; font-size: 2em; font-weight: bold;">🌐 Acceso al internet en América Latina 🌐</div>
+    <a href="https://github.com/bmuoz/bmuoz.github.io" target="_blank" class="link-button">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Fuente" style="width: 100%; height: auto;">
+    </a>
+</header>
+  
     
-    <section class="svg-section">
-        <h2>Rendimiento por Partido (SVG)</h2>
-        <svg id="svg-rendimiento" width="500" height="300" viewBox="0 0 500 300">
-            <!-- Eje X -->
-            <line x1="50" y1="250" x2="450" y2="250" stroke="black" stroke-width="2"/>
-            <!-- Eje Y -->
-            <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="2"/>
-            <!-- Título del gráfico -->
-            <text x="200" y="40" fill="black" font-size="16">Rendimiento por Partido</text>
-            <!-- Círculos que representan los puntos del gráfico -->
-            <image href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrCV610snHSVITuTaTMdt7ZTUQgDpFbVN7O11XfewrhZ8MaKNG" x="50" y="200" height="50px" width="20px"/>
-            <image href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrCV610snHSVITuTaTMdt7ZTUQgDpFbVN7O11XfewrhZ8MaKNG" x="150" y="180" height="50px" width="20px"/>
-            <image href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrCV610snHSVITuTaTMdt7ZTUQgDpFbVN7O11XfewrhZ8MaKNG" x="250" y="150" height="50px" width="20px"/>
-            <image href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrCV610snHSVITuTaTMdt7ZTUQgDpFbVN7O11XfewrhZ8MaKNG" x="350" y="120" height="50px" width="20px"/>
-            <image href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrCV610snHSVITuTaTMdt7ZTUQgDpFbVN7O11XfewrhZ8MaKNG" x="450" y="100" height="50px" width="20px"/>
-            <!-- Etiquetas de los partidos -->
-            <text x="40" y="270" fill="black">Partido 1</text>
-            <text x="140" y="270" fill="black">Partido 2</text>
-            <text x="240" y="270" fill="black">Partido 3</text>
-            <text x="340" y="270" fill="black">Partido 4</text>
-            <text x="440" y="270" fill="black">Partido 5</text>
-            <!-- Formas adicionales (ejemplo de un balón) -->
-            <circle cx="460" cy="50" r="20" fill="white" stroke="black" stroke-width="3"/>
-            <line x1="460" y1="30" x2="460" y2="70" stroke="black" stroke-width="2"/>
-            <line x1="440" y1="50" x2="480" y2="50" stroke="black" stroke-width="2"/>
-        </svg>
+    <section class="main-content">
+        <div class="sidebar">
+            <h2>Índice</h2>
+            <p>Explora las características del acceso a internet en países de Latinoamérica.</p>
+            <ul>
+                <li><a href="#chart-container">Ver gráfico</a></li>
+                <li><a href="#info-adicional">Información Adicional</a></li>
+                <li><a href="#mas-detalles">Más detalles</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Introducción</h1>
+            <p>Descubre cómo ha evolucionado la velocidad de internet en Latinoamérica.</p>
+            <div id="chart-container">
+                <div id="chart"></div>
+            </div>
+            <div class="info-images-container">
+                <div class="info-boxes" id="info-adicional">
+                    <div class="info-box">
+                        <h2>Información Adicional</h2>
+                        <p>La velocidad de internet ha mejorado en los últimos años en la mayoría de los países de la región. Sin embargo, la disponibilidad y calidad del servicio varían significativamente.</p>
+                        <p>Este gráfico muestra un análisis de la velocidad de banda ancha promedio en diferentes países de Latinoamérica.</p>
+                    </div>
+                    <img src="https://concepto.de/wp-content/uploads/2024/06/internet.jpg" alt="Ilustración de conexión a internet" class="vector-image">
+                </div>
+                <div class="info-boxes" id="mas-detalles">
+                    <div class="info-box">
+                        <h2>Más Detalles</h2>
+                        <p>El desarrollo de la infraestructura de internet es clave para reducir la brecha digital. La expansión de la conectividad sigue siendo un desafío en áreas rurales.</p>
+                        <p>Conoce más sobre estos datos en la fuente oficial.</p>
+                        <a class="data-button" href="https://data.worldbank.org/" target="_blank">Ver datos en World Bank</a>
+                    </div>
+                    <img src="https://enlinea.santotomas.cl/web/wp-content/uploads/sites/2/2018/05/chile-internet-744x445.jpg" alt="Ilustración de conectividad global" class="vector-image">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="svg-section">
-        <h2>Rendimiento por Partido (SVG)</h2>
-        <svg id="svg-rendimiento" width="500" height="300" viewBox="0 0 500 300">
-            <!-- Eje X -->
-            <line x1="50" y1="250" x2="450" y2="250" stroke="black" stroke-width="2"/>
-            <!-- Eje Y -->
-            <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="2"/>
-            <!-- Título del gráfico -->
-            <text x="200" y="40" fill="black" font-size="16">Rendimiento por Partido</text>
-            <!-- Imágenes SVG insertadas directamente -->
-            <image href="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrCV610snHSVITuTaTMdt7ZTUQgDpFbVN7O11XfewrhZ8MaKNG" x="430" y="30" height="40px" width="40px"/>
-            <!-- Líneas de rendimiento -->
-            <polyline points="50,200 150,180 250,150 350,120 450,100" fill="none" stroke="blue" stroke-width="3"/>
-            <!-- Etiquetas de los partidos -->
-            <text x="40" y="270" fill="black">Partido 1</text>
-            <text x="140" y="270" fill="black">Partido 2</text>
-            <text x="240" y="270" fill="black">Partido 3</text>
-            <text x="340" y="270" fill="black">Partido 4</text>
-            <text x="440" y="270" fill="black">Partido 5</text>
-        </svg>
-    </section>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Hola</a>
+            <a href="#">Como</a>
+            <a href="#">Estas</a>
+            <a href="#">Bien</a>
+            <a href="#">Y tu</a>
+            <a href="#">Bien tambien</a>
+            <a href="#">Que bueno</a>
+            <a href="#">Bueno adios</a>
+            <a href="#">Adios</a>
+        </div>
+        <p>&copy; 2024 Acceso a Internet en Latinoamérica. Todos los derechos reservados.</p>
+    </footer>
 
-    
-    <section class="svg-section">
-        <h2>Estadísticas visuales de Cole Palmer</h2>
-        <!-- SVG de un balón de fútbol desde una URL -->
-        <img src="https://media.tenor.com/54E7MfuxCeUAAAAM/cole-palmer-cold-palmer.gif" alt="Icono de balón de fútbol" width="500" height="500"/>
-    </section>
-    
+    <script src="script.js"></script>
 </body>
 </html>

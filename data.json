@@ -1,0 +1,2468 @@
+{
+    "ARG": {
+        "country_name": "Argentina",
+        "data": [
+            {
+                "year": "2021",
+                "population": 45808747,
+                "internet_users_percentage": 87.1507,
+                "broadband_subscriptions": 10500000
+            },
+            {
+                "year": "2020",
+                "population": 45376763,
+                "internet_users_percentage": 85.5144,
+                "broadband_subscriptions": 9570000
+            },
+            {
+                "year": "2019",
+                "population": 44938712,
+                "internet_users_percentage": 79.947,
+                "broadband_subscriptions": 8790000
+            },
+            {
+                "year": "2018",
+                "population": 44494502,
+                "internet_users_percentage": 77.7,
+                "broadband_subscriptions": 8470000
+            },
+            {
+                "year": "2017",
+                "population": 44044811,
+                "internet_users_percentage": 74.2949,
+                "broadband_subscriptions": 7840000
+            },
+            {
+                "year": "2016",
+                "population": 43590368,
+                "internet_users_percentage": 70.969,
+                "broadband_subscriptions": 7250000
+            },
+            {
+                "year": "2015",
+                "population": 43131966,
+                "internet_users_percentage": 68.0431,
+                "broadband_subscriptions": 6860000
+            },
+            {
+                "year": "2014",
+                "population": 42669500,
+                "internet_users_percentage": 64.7,
+                "broadband_subscriptions": 6520000
+            },
+            {
+                "year": "2013",
+                "population": 42202935,
+                "internet_users_percentage": 59.9,
+                "broadband_subscriptions": 6250000
+            },
+            {
+                "year": "2012",
+                "population": 41733271,
+                "internet_users_percentage": 55.8,
+                "broadband_subscriptions": 5150000
+            },
+            {
+                "year": "2011",
+                "population": 41261490,
+                "internet_users_percentage": 51,
+                "broadband_subscriptions": 4570000
+            },
+            {
+                "year": "2010",
+                "population": 40788453,
+                "internet_users_percentage": 45,
+                "broadband_subscriptions": 4030000
+            },
+            {
+                "year": "2009",
+                "population": 40684338,
+                "internet_users_percentage": 34,
+                "broadband_subscriptions": 3510000
+            },
+            {
+                "year": "2008",
+                "population": 40273769,
+                "internet_users_percentage": 28.1126,
+                "broadband_subscriptions": 3110000
+            },
+            {
+                "year": "2007",
+                "population": 39876111,
+                "internet_users_percentage": 25.9466,
+                "broadband_subscriptions": 2600000
+            },
+            {
+                "year": "2006",
+                "population": 39476851,
+                "internet_users_percentage": 20.9272,
+                "broadband_subscriptions": 1580000
+            },
+            {
+                "year": "2005",
+                "population": 39070501,
+                "internet_users_percentage": 17.7206,
+                "broadband_subscriptions": 927000
+            },
+            {
+                "year": "2004",
+                "population": 38668796,
+                "internet_users_percentage": 16.0367,
+                "broadband_subscriptions": 543000
+            },
+            {
+                "year": "2003",
+                "population": 38278164,
+                "internet_users_percentage": 11.9137,
+                "broadband_subscriptions": 259000
+            },
+            {
+                "year": "2002",
+                "population": 37885028,
+                "internet_users_percentage": 10.8821,
+                "broadband_subscriptions": 148000
+            },
+            {
+                "year": "2001",
+                "population": 37480493,
+                "internet_users_percentage": 9.78081,
+                "broadband_subscriptions": 94000
+            },
+            {
+                "year": "2000",
+                "population": 37070774,
+                "internet_users_percentage": 7.03868,
+                "broadband_subscriptions": null
+            }
+        ]
+    },
+    "BRA": {
+        "country_name": "Brazil",
+        "data": [
+            {
+                "year": "2021",
+                "population": 214326223,
+                "internet_users_percentage": 80.6899,
+                "broadband_subscriptions": 41600000
+            },
+            {
+                "year": "2020",
+                "population": 213196304,
+                "internet_users_percentage": 81.3427,
+                "broadband_subscriptions": 36300000
+            },
+            {
+                "year": "2019",
+                "population": 211782878,
+                "internet_users_percentage": 73.9124,
+                "broadband_subscriptions": 32900000
+            },
+            {
+                "year": "2018",
+                "population": 210166592,
+                "internet_users_percentage": 70.4343,
+                "broadband_subscriptions": 31200000
+            },
+            {
+                "year": "2017",
+                "population": 208504960,
+                "internet_users_percentage": 67.4713,
+                "broadband_subscriptions": 28900000
+            },
+            {
+                "year": "2016",
+                "population": 206859578,
+                "internet_users_percentage": 60.8725,
+                "broadband_subscriptions": 26900000
+            },
+            {
+                "year": "2015",
+                "population": 205188205,
+                "internet_users_percentage": 58.328,
+                "broadband_subscriptions": 25500000
+            },
+            {
+                "year": "2014",
+                "population": 203459650,
+                "internet_users_percentage": 54.551,
+                "broadband_subscriptions": 24000000
+            },
+            {
+                "year": "2013",
+                "population": 201721767,
+                "internet_users_percentage": 51.04,
+                "broadband_subscriptions": 21400000
+            },
+            {
+                "year": "2012",
+                "population": 199977707,
+                "internet_users_percentage": 48.56,
+                "broadband_subscriptions": 19100000
+            },
+            {
+                "year": "2011",
+                "population": 198185302,
+                "internet_users_percentage": 45.69,
+                "broadband_subscriptions": 17800000
+            },
+            {
+                "year": "2010",
+                "population": 196353492,
+                "internet_users_percentage": 40.65,
+                "broadband_subscriptions": 14100000
+            },
+            {
+                "year": "2009",
+                "population": 194517549,
+                "internet_users_percentage": 39.22,
+                "broadband_subscriptions": 11700000
+            },
+            {
+                "year": "2008",
+                "population": 192672317,
+                "internet_users_percentage": 33.83,
+                "broadband_subscriptions": 10000000
+            },
+            {
+                "year": "2007",
+                "population": 190779453,
+                "internet_users_percentage": 30.88,
+                "broadband_subscriptions": 7610000
+            },
+            {
+                "year": "2006",
+                "population": 188820682,
+                "internet_users_percentage": 28.1784,
+                "broadband_subscriptions": 4770000
+            },
+            {
+                "year": "2005",
+                "population": 186797334,
+                "internet_users_percentage": 21.0227,
+                "broadband_subscriptions": 3230000
+            },
+            {
+                "year": "2004",
+                "population": 184722043,
+                "internet_users_percentage": 19.0737,
+                "broadband_subscriptions": 3160000
+            },
+            {
+                "year": "2003",
+                "population": 182629278,
+                "internet_users_percentage": 13.2076,
+                "broadband_subscriptions": 966000
+            },
+            {
+                "year": "2002",
+                "population": 180476685,
+                "internet_users_percentage": 9.14943,
+                "broadband_subscriptions": 731000
+            },
+            {
+                "year": "2001",
+                "population": 178211881,
+                "internet_users_percentage": 4.52849,
+                "broadband_subscriptions": 331000
+            },
+            {
+                "year": "2000",
+                "population": 175873720,
+                "internet_users_percentage": 2.87069,
+                "broadband_subscriptions": 100000
+            }
+        ]
+    },
+    "CHL": {
+        "country_name": "Chile",
+        "data": [
+            {
+                "year": "2021",
+                "population": 19493184,
+                "internet_users_percentage": 88.8045,
+                "broadband_subscriptions": 4280000
+            },
+            {
+                "year": "2020",
+                "population": 19300315,
+                "internet_users_percentage": 87.4593,
+                "broadband_subscriptions": 3760000
+            },
+            {
+                "year": "2019",
+                "population": 19039485,
+                "internet_users_percentage": 85.0176,
+                "broadband_subscriptions": 3430000
+            },
+            {
+                "year": "2018",
+                "population": 18701450,
+                "internet_users_percentage": 84.9,
+                "broadband_subscriptions": 3250000
+            },
+            {
+                "year": "2017",
+                "population": 18368577,
+                "internet_users_percentage": 82.3275,
+                "broadband_subscriptions": 3060000
+            },
+            {
+                "year": "2016",
+                "population": 18083879,
+                "internet_users_percentage": 83.5586,
+                "broadband_subscriptions": 2900000
+            },
+            {
+                "year": "2015",
+                "population": 17870124,
+                "internet_users_percentage": 76.6296,
+                "broadband_subscriptions": 2720000
+            },
+            {
+                "year": "2014",
+                "population": 17687108,
+                "internet_users_percentage": 61.11,
+                "broadband_subscriptions": 2490000
+            },
+            {
+                "year": "2013",
+                "population": 17509925,
+                "internet_users_percentage": 58,
+                "broadband_subscriptions": 2300000
+            },
+            {
+                "year": "2012",
+                "population": 17341771,
+                "internet_users_percentage": 55.05,
+                "broadband_subscriptions": 2170000
+            },
+            {
+                "year": "2011",
+                "population": 17173573,
+                "internet_users_percentage": 52.2496,
+                "broadband_subscriptions": 2009999.99999999
+            },
+            {
+                "year": "2010",
+                "population": 17004162,
+                "internet_users_percentage": 45,
+                "broadband_subscriptions": 1790000
+            },
+            {
+                "year": "2009",
+                "population": 16833447,
+                "internet_users_percentage": 41.56,
+                "broadband_subscriptions": 1650000
+            },
+            {
+                "year": "2008",
+                "population": 16661462,
+                "internet_users_percentage": 37.3,
+                "broadband_subscriptions": 1430000
+            },
+            {
+                "year": "2007",
+                "population": 16495538,
+                "internet_users_percentage": 35.9,
+                "broadband_subscriptions": 1300000
+            },
+            {
+                "year": "2006",
+                "population": 16334575,
+                "internet_users_percentage": 34.4978,
+                "broadband_subscriptions": 1010000
+            },
+            {
+                "year": "2005",
+                "population": 16175311,
+                "internet_users_percentage": 31.1753,
+                "broadband_subscriptions": 709000
+            },
+            {
+                "year": "2004",
+                "population": 16017966,
+                "internet_users_percentage": 28.1779,
+                "broadband_subscriptions": 479000
+            },
+            {
+                "year": "2003",
+                "population": 15859112,
+                "internet_users_percentage": 25.4738,
+                "broadband_subscriptions": 352000
+            },
+            {
+                "year": "2002",
+                "population": 15693790,
+                "internet_users_percentage": 22.1,
+                "broadband_subscriptions": 188000
+            },
+            {
+                "year": "2001",
+                "population": 15523978,
+                "internet_users_percentage": 19.1,
+                "broadband_subscriptions": 66700
+            },
+            {
+                "year": "2000",
+                "population": 15351799,
+                "internet_users_percentage": 16.6,
+                "broadband_subscriptions": 7680
+            }
+        ]
+    },
+    "COL": {
+        "country_name": "Colombia",
+        "data": [
+            {
+                "year": "2021",
+                "population": 51516562,
+                "internet_users_percentage": 73.0284,
+                "broadband_subscriptions": 8430000
+            },
+            {
+                "year": "2020",
+                "population": 50930662,
+                "internet_users_percentage": 69.7953,
+                "broadband_subscriptions": 7760000
+            },
+            {
+                "year": "2019",
+                "population": 50187406,
+                "internet_users_percentage": 65.0069,
+                "broadband_subscriptions": 6950000
+            },
+            {
+                "year": "2018",
+                "population": 49276961,
+                "internet_users_percentage": 64.1264,
+                "broadband_subscriptions": 6680000
+            },
+            {
+                "year": "2017",
+                "population": 48351671,
+                "internet_users_percentage": 62.2599,
+                "broadband_subscriptions": 6330000
+            },
+            {
+                "year": "2016",
+                "population": 47625955,
+                "internet_users_percentage": 58.1365,
+                "broadband_subscriptions": 5910000
+            },
+            {
+                "year": "2015",
+                "population": 47119728,
+                "internet_users_percentage": 55.905,
+                "broadband_subscriptions": 5530000
+            },
+            {
+                "year": "2014",
+                "population": 46677947,
+                "internet_users_percentage": 52.5681,
+                "broadband_subscriptions": 5030000
+            },
+            {
+                "year": "2013",
+                "population": 46237930,
+                "internet_users_percentage": 51.7,
+                "broadband_subscriptions": 4540000
+            },
+            {
+                "year": "2012",
+                "population": 45782417,
+                "internet_users_percentage": 48.98,
+                "broadband_subscriptions": 3940000
+            },
+            {
+                "year": "2011",
+                "population": 45308899,
+                "internet_users_percentage": 40.3509,
+                "broadband_subscriptions": 3350000
+            },
+            {
+                "year": "2010",
+                "population": 44816108,
+                "internet_users_percentage": 36.5,
+                "broadband_subscriptions": 2640000
+            },
+            {
+                "year": "2009",
+                "population": 44313917,
+                "internet_users_percentage": 30,
+                "broadband_subscriptions": 2110000
+            },
+            {
+                "year": "2008",
+                "population": 43815313,
+                "internet_users_percentage": 25.6,
+                "broadband_subscriptions": 1770000
+            },
+            {
+                "year": "2007",
+                "population": 43306582,
+                "internet_users_percentage": 21.8,
+                "broadband_subscriptions": 1210000
+            },
+            {
+                "year": "2006",
+                "population": 42772910,
+                "internet_users_percentage": 15.3417,
+                "broadband_subscriptions": 628000
+            },
+            {
+                "year": "2005",
+                "population": 42220940,
+                "internet_users_percentage": 11.0073,
+                "broadband_subscriptions": 319000
+            },
+            {
+                "year": "2004",
+                "population": 41648268,
+                "internet_users_percentage": 9.11869,
+                "broadband_subscriptions": 127000
+            },
+            {
+                "year": "2003",
+                "population": 41057687,
+                "internet_users_percentage": 7.38892,
+                "broadband_subscriptions": 64400
+            },
+            {
+                "year": "2002",
+                "population": 40454050,
+                "internet_users_percentage": 4.6,
+                "broadband_subscriptions": 34900
+            },
+            {
+                "year": "2001",
+                "population": 39837875,
+                "internet_users_percentage": 2.8542,
+                "broadband_subscriptions": 13800
+            },
+            {
+                "year": "2000",
+                "population": 39215135,
+                "internet_users_percentage": 2.20753,
+                "broadband_subscriptions": 8870
+            }
+        ]
+    },
+    "CRI": {
+        "country_name": "Costa Rica",
+        "data": [
+            {
+                "year": "2021",
+                "population": 5153957,
+                "internet_users_percentage": 82.749,
+                "broadband_subscriptions": 1060000
+            },
+            {
+                "year": "2020",
+                "population": 5123105,
+                "internet_users_percentage": 80.5302,
+                "broadband_subscriptions": 993000
+            },
+            {
+                "year": "2019",
+                "population": 5084532,
+                "internet_users_percentage": 81.2026,
+                "broadband_subscriptions": 905000
+            },
+            {
+                "year": "2018",
+                "population": 5040734,
+                "internet_users_percentage": 73.4797,
+                "broadband_subscriptions": 835000
+            },
+            {
+                "year": "2017",
+                "population": 4993842,
+                "internet_users_percentage": 71.5817,
+                "broadband_subscriptions": 744000
+            },
+            {
+                "year": "2016",
+                "population": 4945205,
+                "internet_users_percentage": 65.8804,
+                "broadband_subscriptions": 639000
+            },
+            {
+                "year": "2015",
+                "population": 4895242,
+                "internet_users_percentage": 59.763,
+                "broadband_subscriptions": 559000
+            },
+            {
+                "year": "2014",
+                "population": 4844288,
+                "internet_users_percentage": 53,
+                "broadband_subscriptions": 516000
+            },
+            {
+                "year": "2013",
+                "population": 4791535,
+                "internet_users_percentage": 45.96,
+                "broadband_subscriptions": 485000
+            },
+            {
+                "year": "2012",
+                "population": 4736593,
+                "internet_users_percentage": 47.5,
+                "broadband_subscriptions": 449000
+            },
+            {
+                "year": "2011",
+                "population": 4679926,
+                "internet_users_percentage": 39.2122,
+                "broadband_subscriptions": 420000
+            },
+            {
+                "year": "2010",
+                "population": 4622252,
+                "internet_users_percentage": 36.5,
+                "broadband_subscriptions": 396000
+            },
+            {
+                "year": "2009",
+                "population": 4563127,
+                "internet_users_percentage": 34.33,
+                "broadband_subscriptions": 183000
+            },
+            {
+                "year": "2008",
+                "population": 4501921,
+                "internet_users_percentage": 32.29,
+                "broadband_subscriptions": 110000
+            },
+            {
+                "year": "2007",
+                "population": 4440019,
+                "internet_users_percentage": 28.4,
+                "broadband_subscriptions": 95000
+            },
+            {
+                "year": "2006",
+                "population": 4378172,
+                "internet_users_percentage": 25.1,
+                "broadband_subscriptions": 83300
+            },
+            {
+                "year": "2005",
+                "population": 4315887,
+                "internet_users_percentage": 22.07,
+                "broadband_subscriptions": 44900
+            },
+            {
+                "year": "2004",
+                "population": 4252800,
+                "internet_users_percentage": 20.7923,
+                "broadband_subscriptions": 27900
+            },
+            {
+                "year": "2003",
+                "population": 4188610,
+                "internet_users_percentage": 20.3336,
+                "broadband_subscriptions": 14900
+            },
+            {
+                "year": "2002",
+                "population": 4122623,
+                "internet_users_percentage": 19.8949,
+                "broadband_subscriptions": 8990
+            },
+            {
+                "year": "2001",
+                "population": 4053222,
+                "internet_users_percentage": 9.55948,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2000",
+                "population": 3979193,
+                "internet_users_percentage": 5.80025,
+                "broadband_subscriptions": null
+            }
+        ]
+    },
+    "CUB": {
+        "country_name": "Cuba",
+        "data": [
+            {
+                "year": "2021",
+                "population": 11256372,
+                "internet_users_percentage": 67.6435,
+                "broadband_subscriptions": 297000
+            },
+            {
+                "year": "2020",
+                "population": 11300698,
+                "internet_users_percentage": 71.1191,
+                "broadband_subscriptions": 232000
+            },
+            {
+                "year": "2019",
+                "population": 11316697,
+                "internet_users_percentage": 67.9708,
+                "broadband_subscriptions": 183000
+            },
+            {
+                "year": "2018",
+                "population": 11328244,
+                "internet_users_percentage": 62.6789,
+                "broadband_subscriptions": 98800
+            },
+            {
+                "year": "2017",
+                "population": 11336405,
+                "internet_users_percentage": 57.1484,
+                "broadband_subscriptions": 33500
+            },
+            {
+                "year": "2016",
+                "population": 11342012,
+                "internet_users_percentage": 42.9787,
+                "broadband_subscriptions": 14400
+            },
+            {
+                "year": "2015",
+                "population": 11339894,
+                "internet_users_percentage": 37.3051,
+                "broadband_subscriptions": 8160
+            },
+            {
+                "year": "2014",
+                "population": 11332026,
+                "internet_users_percentage": 29.0702,
+                "broadband_subscriptions": 7790
+            },
+            {
+                "year": "2013",
+                "population": 11321579,
+                "internet_users_percentage": 27.93,
+                "broadband_subscriptions": 5360
+            },
+            {
+                "year": "2012",
+                "population": 11309290,
+                "internet_users_percentage": 21.2,
+                "broadband_subscriptions": 5010
+            },
+            {
+                "year": "2011",
+                "population": 11298710,
+                "internet_users_percentage": 16.0173,
+                "broadband_subscriptions": 4420
+            },
+            {
+                "year": "2010",
+                "population": 11290417,
+                "internet_users_percentage": 15.9,
+                "broadband_subscriptions": 3710
+            },
+            {
+                "year": "2009",
+                "population": 11283185,
+                "internet_users_percentage": 14.33,
+                "broadband_subscriptions": 2880
+            },
+            {
+                "year": "2008",
+                "population": 11276609,
+                "internet_users_percentage": 12.94,
+                "broadband_subscriptions": 2250
+            },
+            {
+                "year": "2007",
+                "population": 11269887,
+                "internet_users_percentage": 11.69,
+                "broadband_subscriptions": 1950
+            },
+            {
+                "year": "2006",
+                "population": 11260630,
+                "internet_users_percentage": 11.1596,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2005",
+                "population": 11246114,
+                "internet_users_percentage": 9.73806,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2004",
+                "population": 11225294,
+                "internet_users_percentage": 8.40798,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2003",
+                "population": 11199217,
+                "internet_users_percentage": 5.24127,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2002",
+                "population": 11170051,
+                "internet_users_percentage": 3.77059,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2001",
+                "population": 11139127,
+                "internet_users_percentage": 1.07975,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2000",
+                "population": 11105791,
+                "internet_users_percentage": 0.541183,
+                "broadband_subscriptions": null
+            }
+        ]
+    },
+    "DOM": {
+        "country_name": "Dominican Republic",
+        "data": [
+            {
+                "year": "2021",
+                "population": 11117873,
+                "internet_users_percentage": 85.243,
+                "broadband_subscriptions": 1150000
+            },
+            {
+                "year": "2020",
+                "population": 10999664,
+                "internet_users_percentage": 81.6173,
+                "broadband_subscriptions": 1030000
+            },
+            {
+                "year": "2019",
+                "population": 10881882,
+                "internet_users_percentage": 79.7155,
+                "broadband_subscriptions": 930000
+            },
+            {
+                "year": "2018",
+                "population": 10765531,
+                "internet_users_percentage": 74.822,
+                "broadband_subscriptions": 861000
+            },
+            {
+                "year": "2017",
+                "population": 10647244,
+                "internet_users_percentage": 67.5712,
+                "broadband_subscriptions": 821000
+            },
+            {
+                "year": "2016",
+                "population": 10527592,
+                "internet_users_percentage": 63.8709,
+                "broadband_subscriptions": 761000
+            },
+            {
+                "year": "2015",
+                "population": 10405832,
+                "internet_users_percentage": 54.2158,
+                "broadband_subscriptions": 686000
+            },
+            {
+                "year": "2014",
+                "population": 10282115,
+                "internet_users_percentage": 49.58,
+                "broadband_subscriptions": 600000
+            },
+            {
+                "year": "2013",
+                "population": 10157051,
+                "internet_users_percentage": 45.9,
+                "broadband_subscriptions": 527000
+            },
+            {
+                "year": "2012",
+                "population": 10030882,
+                "internet_users_percentage": 42.32,
+                "broadband_subscriptions": 484000
+            },
+            {
+                "year": "2011",
+                "population": 9903737,
+                "internet_users_percentage": 38,
+                "broadband_subscriptions": 424000
+            },
+            {
+                "year": "2010",
+                "population": 9775755,
+                "internet_users_percentage": 31.4,
+                "broadband_subscriptions": 391000
+            },
+            {
+                "year": "2009",
+                "population": 9648061,
+                "internet_users_percentage": 27.72,
+                "broadband_subscriptions": 316000
+            },
+            {
+                "year": "2008",
+                "population": 9522948,
+                "internet_users_percentage": 20.82,
+                "broadband_subscriptions": 239000
+            },
+            {
+                "year": "2007",
+                "population": 9402206,
+                "internet_users_percentage": 17.66,
+                "broadband_subscriptions": 174000
+            },
+            {
+                "year": "2006",
+                "population": 9284168,
+                "internet_users_percentage": 14.8449,
+                "broadband_subscriptions": 103000
+            },
+            {
+                "year": "2005",
+                "population": 9164768,
+                "internet_users_percentage": 11.4832,
+                "broadband_subscriptions": 60700
+            },
+            {
+                "year": "2004",
+                "population": 9043127,
+                "internet_users_percentage": 8.86555,
+                "broadband_subscriptions": 37300
+            },
+            {
+                "year": "2003",
+                "population": 8919852,
+                "internet_users_percentage": 7.89839,
+                "broadband_subscriptions": 15000
+            },
+            {
+                "year": "2002",
+                "population": 8795101,
+                "internet_users_percentage": 6.82373,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2001",
+                "population": 8669040,
+                "internet_users_percentage": 4.42939,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2000",
+                "population": 8540791,
+                "internet_users_percentage": 3.70469,
+                "broadband_subscriptions": null
+            }
+        ]
+    },
+    "ECU": {
+        "country_name": "Ecuador",
+        "data": [
+            {
+                "year": "2021",
+                "population": 17797737,
+                "internet_users_percentage": 70.2073,
+                "broadband_subscriptions": 2480000
+            },
+            {
+                "year": "2020",
+                "population": 17588595,
+                "internet_users_percentage": 70.7,
+                "broadband_subscriptions": 2370000
+            },
+            {
+                "year": "2019",
+                "population": 17343740,
+                "internet_users_percentage": 59.2,
+                "broadband_subscriptions": 2089999.99999999
+            },
+            {
+                "year": "2018",
+                "population": 17015672,
+                "internet_users_percentage": 57.5,
+                "broadband_subscriptions": 1950000
+            },
+            {
+                "year": "2017",
+                "population": 16696944,
+                "internet_users_percentage": 55.8,
+                "broadband_subscriptions": 1780000
+            },
+            {
+                "year": "2016",
+                "population": 16439585,
+                "internet_users_percentage": 54.0629,
+                "broadband_subscriptions": 1610000
+            },
+            {
+                "year": "2015",
+                "population": 16195902,
+                "internet_users_percentage": 48.9404,
+                "broadband_subscriptions": 1490000
+            },
+            {
+                "year": "2014",
+                "population": 15957994,
+                "internet_users_percentage": 45.5904,
+                "broadband_subscriptions": 1320000
+            },
+            {
+                "year": "2013",
+                "population": 15722989,
+                "internet_users_percentage": 40.2791,
+                "broadband_subscriptions": 1060000
+            },
+            {
+                "year": "2012",
+                "population": 15483883,
+                "internet_users_percentage": 35.1351,
+                "broadband_subscriptions": 844000
+            },
+            {
+                "year": "2011",
+                "population": 15237728,
+                "internet_users_percentage": 31.3668,
+                "broadband_subscriptions": 659000
+            },
+            {
+                "year": "2010",
+                "population": 14989585,
+                "internet_users_percentage": 29.03,
+                "broadband_subscriptions": 221000
+            },
+            {
+                "year": "2009",
+                "population": 14742766,
+                "internet_users_percentage": 24.6,
+                "broadband_subscriptions": 241000
+            },
+            {
+                "year": "2008",
+                "population": 14496797,
+                "internet_users_percentage": 18.8,
+                "broadband_subscriptions": 156000
+            },
+            {
+                "year": "2007",
+                "population": 14251835,
+                "internet_users_percentage": 10.8,
+                "broadband_subscriptions": 100000
+            },
+            {
+                "year": "2006",
+                "population": 14009061,
+                "internet_users_percentage": 7.2,
+                "broadband_subscriptions": 46000
+            },
+            {
+                "year": "2005",
+                "population": 13770012,
+                "internet_users_percentage": 5.99426,
+                "broadband_subscriptions": 26800
+            },
+            {
+                "year": "2004",
+                "population": 13534593,
+                "internet_users_percentage": 4.83444,
+                "broadband_subscriptions": 11600
+            },
+            {
+                "year": "2003",
+                "population": 13301184,
+                "internet_users_percentage": 4.46023,
+                "broadband_subscriptions": 6920
+            },
+            {
+                "year": "2002",
+                "population": 13070609,
+                "internet_users_percentage": 4.2608,
+                "broadband_subscriptions": 6500
+            },
+            {
+                "year": "2001",
+                "population": 12845521,
+                "internet_users_percentage": 2.67044,
+                "broadband_subscriptions": 2620
+            },
+            {
+                "year": "2000",
+                "population": 12626507,
+                "internet_users_percentage": 1.46219,
+                "broadband_subscriptions": null
+            }
+        ]
+    },
+    "GTM": {
+        "country_name": "Guatemala",
+        "data": [
+            {
+                "year": "2021",
+                "population": 17109746,
+                "internet_users_percentage": 50.8416,
+                "broadband_subscriptions": 612000
+            },
+            {
+                "year": "2020",
+                "population": 16858333,
+                "internet_users_percentage": 47.5123,
+                "broadband_subscriptions": 612000
+            },
+            {
+                "year": "2019",
+                "population": 16604026,
+                "internet_users_percentage": 44.401,
+                "broadband_subscriptions": 585000
+            },
+            {
+                "year": "2018",
+                "population": 16346950,
+                "internet_users_percentage": 41.5,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2017",
+                "population": 16087418,
+                "internet_users_percentage": 37.9,
+                "broadband_subscriptions": 531000
+            },
+            {
+                "year": "2016",
+                "population": 15827690,
+                "internet_users_percentage": 34.5093,
+                "broadband_subscriptions": 506000
+            },
+            {
+                "year": "2015",
+                "population": 15567419,
+                "internet_users_percentage": 28.8059,
+                "broadband_subscriptions": 460000
+            },
+            {
+                "year": "2014",
+                "population": 15306316,
+                "internet_users_percentage": 23.4,
+                "broadband_subscriptions": 434000
+            },
+            {
+                "year": "2013",
+                "population": 15043981,
+                "internet_users_percentage": 19.7,
+                "broadband_subscriptions": 353000
+            },
+            {
+                "year": "2012",
+                "population": 14781942,
+                "internet_users_percentage": 16,
+                "broadband_subscriptions": 280000
+            },
+            {
+                "year": "2011",
+                "population": 14521515,
+                "internet_users_percentage": 12.3,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2010",
+                "population": 14259687,
+                "internet_users_percentage": 10.5,
+                "broadband_subscriptions": 259000
+            },
+            {
+                "year": "2009",
+                "population": 14000190,
+                "internet_users_percentage": 9.3,
+                "broadband_subscriptions": 156000
+            },
+            {
+                "year": "2008",
+                "population": 13739299,
+                "internet_users_percentage": 8.3,
+                "broadband_subscriptions": 94500
+            },
+            {
+                "year": "2007",
+                "population": 13477017,
+                "internet_users_percentage": 7.3,
+                "broadband_subscriptions": 57000
+            },
+            {
+                "year": "2006",
+                "population": 13213330,
+                "internet_users_percentage": 6.5,
+                "broadband_subscriptions": 39000
+            },
+            {
+                "year": "2005",
+                "population": 12948292,
+                "internet_users_percentage": 5.7,
+                "broadband_subscriptions": 27100
+            },
+            {
+                "year": "2004",
+                "population": 12682108,
+                "internet_users_percentage": 5.1,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2003",
+                "population": 12415334,
+                "internet_users_percentage": 4.54885,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2002",
+                "population": 12147518,
+                "internet_users_percentage": 3.39175,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2001",
+                "population": 11871565,
+                "internet_users_percentage": 1.7382,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2000",
+                "population": 11589761,
+                "internet_users_percentage": 0.712333,
+                "broadband_subscriptions": null
+            }
+        ]
+    },
+    "HND": {
+        "country_name": "Honduras",
+        "data": [
+            {
+                "year": "2021",
+                "population": 10278345,
+                "internet_users_percentage": 51.9801,
+                "broadband_subscriptions": 421000
+            },
+            {
+                "year": "2020",
+                "population": 10121763,
+                "internet_users_percentage": 45.2483,
+                "broadband_subscriptions": 397000
+            },
+            {
+                "year": "2019",
+                "population": 9958829,
+                "internet_users_percentage": 39.3884,
+                "broadband_subscriptions": 390000
+            },
+            {
+                "year": "2018",
+                "population": 9792850,
+                "internet_users_percentage": 36.0401,
+                "broadband_subscriptions": 355000
+            },
+            {
+                "year": "2017",
+                "population": 9626842,
+                "internet_users_percentage": 31.7358,
+                "broadband_subscriptions": 238000
+            },
+            {
+                "year": "2016",
+                "population": 9460798,
+                "internet_users_percentage": 29.5282,
+                "broadband_subscriptions": 220000
+            },
+            {
+                "year": "2015",
+                "population": 9294505,
+                "internet_users_percentage": 27.1395,
+                "broadband_subscriptions": 197000
+            },
+            {
+                "year": "2014",
+                "population": 9127846,
+                "internet_users_percentage": 23,
+                "broadband_subscriptions": 158000
+            },
+            {
+                "year": "2013",
+                "population": 8960657,
+                "internet_users_percentage": 17.8,
+                "broadband_subscriptions": 69000
+            },
+            {
+                "year": "2012",
+                "population": 8792367,
+                "internet_users_percentage": 18.12,
+                "broadband_subscriptions": 61300
+            },
+            {
+                "year": "2011",
+                "population": 8622504,
+                "internet_users_percentage": 15.9,
+                "broadband_subscriptions": 57300
+            },
+            {
+                "year": "2010",
+                "population": 8450933,
+                "internet_users_percentage": 11.09,
+                "broadband_subscriptions": 1000
+            },
+            {
+                "year": "2009",
+                "population": 8277302,
+                "internet_users_percentage": 9.8,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2008",
+                "population": 8101777,
+                "internet_users_percentage": 9.6,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2007",
+                "population": 7924462,
+                "internet_users_percentage": 9.4,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2006",
+                "population": 7745200,
+                "internet_users_percentage": 7.8,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2005",
+                "population": 7564613,
+                "internet_users_percentage": 6.5,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2004",
+                "population": 7383407,
+                "internet_users_percentage": 5.6,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2003",
+                "population": 7201881,
+                "internet_users_percentage": 4.8,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2002",
+                "population": 7019908,
+                "internet_users_percentage": 2.5974,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2001",
+                "population": 6837861,
+                "internet_users_percentage": 1.41528,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2000",
+                "population": 6656725,
+                "internet_users_percentage": 1.20386,
+                "broadband_subscriptions": null
+            }
+        ]
+    },
+    "MEX": {
+        "country_name": "Mexico",
+        "data": [
+            {
+                "year": "2021",
+                "population": 126705138,
+                "internet_users_percentage": 75.6265,
+                "broadband_subscriptions": 24600000
+            },
+            {
+                "year": "2020",
+                "population": 125998302,
+                "internet_users_percentage": 71.4902,
+                "broadband_subscriptions": 22500000
+            },
+            {
+                "year": "2019",
+                "population": 125085311,
+                "internet_users_percentage": 69.6321,
+                "broadband_subscriptions": 19400000
+            },
+            {
+                "year": "2018",
+                "population": 124013861,
+                "internet_users_percentage": 56.6596,
+                "broadband_subscriptions": 18400000
+            },
+            {
+                "year": "2017",
+                "population": 122839258,
+                "internet_users_percentage": 53.0318,
+                "broadband_subscriptions": 17000000
+            },
+            {
+                "year": "2016",
+                "population": 121519221,
+                "internet_users_percentage": 59.5404,
+                "broadband_subscriptions": 15900000
+            },
+            {
+                "year": "2015",
+                "population": 120149897,
+                "internet_users_percentage": 57.431,
+                "broadband_subscriptions": 14800000
+            },
+            {
+                "year": "2014",
+                "population": 118755887,
+                "internet_users_percentage": 44.3857,
+                "broadband_subscriptions": 13000000
+            },
+            {
+                "year": "2013",
+                "population": 117290686,
+                "internet_users_percentage": 43.46,
+                "broadband_subscriptions": 12700000
+            },
+            {
+                "year": "2012",
+                "population": 115755909,
+                "internet_users_percentage": 39.75,
+                "broadband_subscriptions": 13100000
+            },
+            {
+                "year": "2011",
+                "population": 114150481,
+                "internet_users_percentage": 37.1763,
+                "broadband_subscriptions": 11600000
+            },
+            {
+                "year": "2010",
+                "population": 112532401,
+                "internet_users_percentage": 31.05,
+                "broadband_subscriptions": 10600000
+            },
+            {
+                "year": "2009",
+                "population": 111049428,
+                "internet_users_percentage": 26.34,
+                "broadband_subscriptions": 9640000
+            },
+            {
+                "year": "2008",
+                "population": 109684489,
+                "internet_users_percentage": 21.71,
+                "broadband_subscriptions": 7530000
+            },
+            {
+                "year": "2007",
+                "population": 108302973,
+                "internet_users_percentage": 20.81,
+                "broadband_subscriptions": 4500000
+            },
+            {
+                "year": "2006",
+                "population": 106886790,
+                "internet_users_percentage": 19.52,
+                "broadband_subscriptions": 3020000
+            },
+            {
+                "year": "2005",
+                "population": 105442402,
+                "internet_users_percentage": 17.21,
+                "broadband_subscriptions": 1920000
+            },
+            {
+                "year": "2004",
+                "population": 103945813,
+                "internet_users_percentage": 14.1,
+                "broadband_subscriptions": 1060000
+            },
+            {
+                "year": "2003",
+                "population": 102429341,
+                "internet_users_percentage": 12.9,
+                "broadband_subscriptions": 428000
+            },
+            {
+                "year": "2002",
+                "population": 100917081,
+                "internet_users_percentage": 11.9,
+                "broadband_subscriptions": 231000
+            },
+            {
+                "year": "2001",
+                "population": 99394288,
+                "internet_users_percentage": 7.03802,
+                "broadband_subscriptions": 50000
+            },
+            {
+                "year": "2000",
+                "population": 97873442,
+                "internet_users_percentage": 5.08138,
+                "broadband_subscriptions": 15000
+            }
+        ]
+    },
+    "NIC": {
+        "country_name": "Nicaragua",
+        "data": [
+            {
+                "year": "2021",
+                "population": 6850540,
+                "internet_users_percentage": 54.7975,
+                "broadband_subscriptions": 300000
+            },
+            {
+                "year": "2020",
+                "population": 6755895,
+                "internet_users_percentage": 54.8543,
+                "broadband_subscriptions": 290000
+            },
+            {
+                "year": "2019",
+                "population": 6663924,
+                "internet_users_percentage": 44.9164,
+                "broadband_subscriptions": 218000
+            },
+            {
+                "year": "2018",
+                "population": 6572233,
+                "internet_users_percentage": 37.6,
+                "broadband_subscriptions": 192000
+            },
+            {
+                "year": "2017",
+                "population": 6480532,
+                "internet_users_percentage": 30.4,
+                "broadband_subscriptions": 210000
+            },
+            {
+                "year": "2016",
+                "population": 6389235,
+                "internet_users_percentage": 24.5718,
+                "broadband_subscriptions": 177000
+            },
+            {
+                "year": "2015",
+                "population": 6298598,
+                "internet_users_percentage": 19.7043,
+                "broadband_subscriptions": 116000
+            },
+            {
+                "year": "2014",
+                "population": 6208676,
+                "internet_users_percentage": 17.6,
+                "broadband_subscriptions": 111000
+            },
+            {
+                "year": "2013",
+                "population": 6119379,
+                "internet_users_percentage": 15.5,
+                "broadband_subscriptions": 132000
+            },
+            {
+                "year": "2012",
+                "population": 6030607,
+                "internet_users_percentage": 13.5,
+                "broadband_subscriptions": 101000
+            },
+            {
+                "year": "2011",
+                "population": 5942553,
+                "internet_users_percentage": 10.6,
+                "broadband_subscriptions": 85100
+            },
+            {
+                "year": "2010",
+                "population": 5855734,
+                "internet_users_percentage": 10,
+                "broadband_subscriptions": 73300
+            },
+            {
+                "year": "2009",
+                "population": 5770639,
+                "internet_users_percentage": 7.3,
+                "broadband_subscriptions": 78700
+            },
+            {
+                "year": "2008",
+                "population": 5687744,
+                "internet_users_percentage": 5.3,
+                "broadband_subscriptions": 43200
+            },
+            {
+                "year": "2007",
+                "population": 5607453,
+                "internet_users_percentage": 3.9,
+                "broadband_subscriptions": 27600
+            },
+            {
+                "year": "2006",
+                "population": 5529811,
+                "internet_users_percentage": 2.80557,
+                "broadband_subscriptions": 19000
+            },
+            {
+                "year": "2005",
+                "population": 5454678,
+                "internet_users_percentage": 2.56635,
+                "broadband_subscriptions": 10500
+            },
+            {
+                "year": "2004",
+                "population": 5386223,
+                "internet_users_percentage": 2.32066,
+                "broadband_subscriptions": 5000
+            },
+            {
+                "year": "2003",
+                "population": 5323062,
+                "internet_users_percentage": 1.88041,
+                "broadband_subscriptions": 4400
+            },
+            {
+                "year": "2002",
+                "population": 5259006,
+                "internet_users_percentage": 1.71473,
+                "broadband_subscriptions": 2320
+            },
+            {
+                "year": "2001",
+                "population": 5192764,
+                "internet_users_percentage": 1.4488,
+                "broadband_subscriptions": 1600
+            },
+            {
+                "year": "2000",
+                "population": 5123222,
+                "internet_users_percentage": 0.980216,
+                "broadband_subscriptions": 700
+            }
+        ]
+    },
+    "PAN": {
+        "country_name": "Panama",
+        "data": [
+            {
+                "year": "2021",
+                "population": 4351267,
+                "internet_users_percentage": 73.0556,
+                "broadband_subscriptions": 645000
+            },
+            {
+                "year": "2020",
+                "population": 4294396,
+                "internet_users_percentage": 72.61,
+                "broadband_subscriptions": 594000
+            },
+            {
+                "year": "2019",
+                "population": 4232532,
+                "internet_users_percentage": 63.6284,
+                "broadband_subscriptions": 536000
+            },
+            {
+                "year": "2018",
+                "population": 4165255,
+                "internet_users_percentage": 61.8055,
+                "broadband_subscriptions": 540000
+            },
+            {
+                "year": "2017",
+                "population": 4096063,
+                "internet_users_percentage": 59.9506,
+                "broadband_subscriptions": 441000
+            },
+            {
+                "year": "2016",
+                "population": 4026336,
+                "internet_users_percentage": 54,
+                "broadband_subscriptions": 430000
+            },
+            {
+                "year": "2015",
+                "population": 3957099,
+                "internet_users_percentage": 51.2054,
+                "broadband_subscriptions": 316000
+            },
+            {
+                "year": "2014",
+                "population": 3888793,
+                "internet_users_percentage": 44.9238,
+                "broadband_subscriptions": 310000
+            },
+            {
+                "year": "2013",
+                "population": 3821556,
+                "internet_users_percentage": 44.03,
+                "broadband_subscriptions": 307000
+            },
+            {
+                "year": "2012",
+                "population": 3754862,
+                "internet_users_percentage": 40.3019,
+                "broadband_subscriptions": 295000
+            },
+            {
+                "year": "2011",
+                "population": 3688674,
+                "internet_users_percentage": 42.7,
+                "broadband_subscriptions": 283000
+            },
+            {
+                "year": "2010",
+                "population": 3623617,
+                "internet_users_percentage": 40.1,
+                "broadband_subscriptions": 258000
+            },
+            {
+                "year": "2009",
+                "population": 3559343,
+                "internet_users_percentage": 39.08,
+                "broadband_subscriptions": 234000
+            },
+            {
+                "year": "2008",
+                "population": 3495276,
+                "internet_users_percentage": 33.82,
+                "broadband_subscriptions": 196000
+            },
+            {
+                "year": "2007",
+                "population": 3431614,
+                "internet_users_percentage": 22.29,
+                "broadband_subscriptions": 150000
+            },
+            {
+                "year": "2006",
+                "population": 3368573,
+                "internet_users_percentage": 17.3496,
+                "broadband_subscriptions": 113000
+            },
+            {
+                "year": "2005",
+                "population": 3305868,
+                "internet_users_percentage": 11.484,
+                "broadband_subscriptions": 17600
+            },
+            {
+                "year": "2004",
+                "population": 3243311,
+                "internet_users_percentage": 11.1409,
+                "broadband_subscriptions": 16700
+            },
+            {
+                "year": "2003",
+                "population": 3181608,
+                "internet_users_percentage": 9.98742,
+                "broadband_subscriptions": 15000
+            },
+            {
+                "year": "2002",
+                "population": 3120990,
+                "internet_users_percentage": 8.51808,
+                "broadband_subscriptions": 12200
+            },
+            {
+                "year": "2001",
+                "population": 3061024,
+                "internet_users_percentage": 7.2684,
+                "broadband_subscriptions": 7770
+            },
+            {
+                "year": "2000",
+                "population": 3001731,
+                "internet_users_percentage": 6.5548,
+                "broadband_subscriptions": null
+            }
+        ]
+    },
+    "PER": {
+        "country_name": "Peru",
+        "data": [
+            {
+                "year": "2021",
+                "population": 33715471,
+                "internet_users_percentage": 71.1078,
+                "broadband_subscriptions": 3000000
+            },
+            {
+                "year": "2020",
+                "population": 33304756,
+                "internet_users_percentage": 65.2518,
+                "broadband_subscriptions": 2760000
+            },
+            {
+                "year": "2019",
+                "population": 32824861,
+                "internet_users_percentage": 59.9505,
+                "broadband_subscriptions": 2400000
+            },
+            {
+                "year": "2018",
+                "population": 32203944,
+                "internet_users_percentage": 55.0543,
+                "broadband_subscriptions": 2580000
+            },
+            {
+                "year": "2017",
+                "population": 31605486,
+                "internet_users_percentage": 50.4504,
+                "broadband_subscriptions": 2310000
+            },
+            {
+                "year": "2016",
+                "population": 31132779,
+                "internet_users_percentage": 45.4617,
+                "broadband_subscriptions": 2120000
+            },
+            {
+                "year": "2015",
+                "population": 30711863,
+                "internet_users_percentage": 40.8526,
+                "broadband_subscriptions": 2000000
+            },
+            {
+                "year": "2014",
+                "population": 30353951,
+                "internet_users_percentage": 40.2447,
+                "broadband_subscriptions": 1770000
+            },
+            {
+                "year": "2013",
+                "population": 30038809,
+                "internet_users_percentage": 39.2,
+                "broadband_subscriptions": 1610000
+            },
+            {
+                "year": "2012",
+                "population": 29749589,
+                "internet_users_percentage": 38.2,
+                "broadband_subscriptions": 1440000
+            },
+            {
+                "year": "2011",
+                "population": 29477721,
+                "internet_users_percentage": 36.01,
+                "broadband_subscriptions": 1210000
+            },
+            {
+                "year": "2010",
+                "population": 29229572,
+                "internet_users_percentage": 34.77,
+                "broadband_subscriptions": 933000
+            },
+            {
+                "year": "2009",
+                "population": 29009326,
+                "internet_users_percentage": 31.4,
+                "broadband_subscriptions": 828000
+            },
+            {
+                "year": "2008",
+                "population": 28806185,
+                "internet_users_percentage": 30.57,
+                "broadband_subscriptions": 726000
+            },
+            {
+                "year": "2007",
+                "population": 28600387,
+                "internet_users_percentage": 25.2,
+                "broadband_subscriptions": 570000
+            },
+            {
+                "year": "2006",
+                "population": 28381078,
+                "internet_users_percentage": 20.7,
+                "broadband_subscriptions": 485000
+            },
+            {
+                "year": "2005",
+                "population": 28147267,
+                "internet_users_percentage": 17.1,
+                "broadband_subscriptions": 353000
+            },
+            {
+                "year": "2004",
+                "population": 27893911,
+                "internet_users_percentage": 14.1,
+                "broadband_subscriptions": 228000
+            },
+            {
+                "year": "2003",
+                "population": 27623341,
+                "internet_users_percentage": 11.6,
+                "broadband_subscriptions": 93900
+            },
+            {
+                "year": "2002",
+                "population": 27334503,
+                "internet_users_percentage": 8.96695,
+                "broadband_subscriptions": 37400
+            },
+            {
+                "year": "2001",
+                "population": 27014909,
+                "internet_users_percentage": 7.57876,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2000",
+                "population": 26654439,
+                "internet_users_percentage": 3.07643,
+                "broadband_subscriptions": 1080
+            }
+        ]
+    },
+    "PRY": {
+        "country_name": "Paraguay",
+        "data": [
+            {
+                "year": "2021",
+                "population": 6703799,
+                "internet_users_percentage": 77.0184,
+                "broadband_subscriptions": 723000
+            },
+            {
+                "year": "2020",
+                "population": 6618695,
+                "internet_users_percentage": 73.9575,
+                "broadband_subscriptions": 562000
+            },
+            {
+                "year": "2019",
+                "population": 6530026,
+                "internet_users_percentage": 68.5176,
+                "broadband_subscriptions": 412000
+            },
+            {
+                "year": "2018",
+                "population": 6443328,
+                "internet_users_percentage": 64.9935,
+                "broadband_subscriptions": 321000
+            },
+            {
+                "year": "2017",
+                "population": 6355404,
+                "internet_users_percentage": 61.0758,
+                "broadband_subscriptions": 290000
+            },
+            {
+                "year": "2016",
+                "population": 6266615,
+                "internet_users_percentage": 53.4041,
+                "broadband_subscriptions": 247000
+            },
+            {
+                "year": "2015",
+                "population": 6177950,
+                "internet_users_percentage": 49.7163,
+                "broadband_subscriptions": 215000
+            },
+            {
+                "year": "2014",
+                "population": 6090721,
+                "internet_users_percentage": 43.0074,
+                "broadband_subscriptions": 185000
+            },
+            {
+                "year": "2013",
+                "population": 6005652,
+                "internet_users_percentage": 36.9,
+                "broadband_subscriptions": 157000
+            },
+            {
+                "year": "2012",
+                "population": 5923322,
+                "internet_users_percentage": 29.34,
+                "broadband_subscriptions": 136000
+            },
+            {
+                "year": "2011",
+                "population": 5843939,
+                "internet_users_percentage": 24.7635,
+                "broadband_subscriptions": 120000
+            },
+            {
+                "year": "2010",
+                "population": 5768613,
+                "internet_users_percentage": 19.8,
+                "broadband_subscriptions": 89500
+            },
+            {
+                "year": "2009",
+                "population": 5702574,
+                "internet_users_percentage": 18.9,
+                "broadband_subscriptions": 77400
+            },
+            {
+                "year": "2008",
+                "population": 5645148,
+                "internet_users_percentage": 14.27,
+                "broadband_subscriptions": 12800
+            },
+            {
+                "year": "2007",
+                "population": 5590145,
+                "internet_users_percentage": 11.21,
+                "broadband_subscriptions": 8600
+            },
+            {
+                "year": "2006",
+                "population": 5534675,
+                "internet_users_percentage": 7.96207,
+                "broadband_subscriptions": 6000
+            },
+            {
+                "year": "2005",
+                "population": 5476878,
+                "internet_users_percentage": 7.90701,
+                "broadband_subscriptions": 5600
+            },
+            {
+                "year": "2004",
+                "population": 5416324,
+                "internet_users_percentage": 3.45244,
+                "broadband_subscriptions": 3050
+            },
+            {
+                "year": "2003",
+                "population": 5353254,
+                "internet_users_percentage": 2.11194,
+                "broadband_subscriptions": 500
+            },
+            {
+                "year": "2002",
+                "population": 5286512,
+                "internet_users_percentage": 1.79497,
+                "broadband_subscriptions": 500
+            },
+            {
+                "year": "2001",
+                "population": 5211541,
+                "internet_users_percentage": 1.09879,
+                "broadband_subscriptions": 300
+            },
+            {
+                "year": "2000",
+                "population": 5123819,
+                "internet_users_percentage": 0.747631,
+                "broadband_subscriptions": 150
+            }
+        ]
+    },
+    "SLV": {
+        "country_name": "El Salvador",
+        "data": [
+            {
+                "year": "2021",
+                "population": 6314167,
+                "internet_users_percentage": 58.5986,
+                "broadband_subscriptions": 613000
+            },
+            {
+                "year": "2020",
+                "population": 6292731,
+                "internet_users_percentage": 54.6014,
+                "broadband_subscriptions": 586000
+            },
+            {
+                "year": "2019",
+                "population": 6280217,
+                "internet_users_percentage": 50.4912,
+                "broadband_subscriptions": 525000
+            },
+            {
+                "year": "2018",
+                "population": 6276342,
+                "internet_users_percentage": 43.8,
+                "broadband_subscriptions": 492000
+            },
+            {
+                "year": "2017",
+                "population": 6266654,
+                "internet_users_percentage": 33.8207,
+                "broadband_subscriptions": 451000
+            },
+            {
+                "year": "2016",
+                "population": 6250510,
+                "internet_users_percentage": 28.9971,
+                "broadband_subscriptions": 395000
+            },
+            {
+                "year": "2015",
+                "population": 6231066,
+                "internet_users_percentage": 26.8026,
+                "broadband_subscriptions": 353000
+            },
+            {
+                "year": "2014",
+                "population": 6209526,
+                "internet_users_percentage": 24.7617,
+                "broadband_subscriptions": 319000
+            },
+            {
+                "year": "2013",
+                "population": 6185642,
+                "internet_users_percentage": 23.1093,
+                "broadband_subscriptions": 284000
+            },
+            {
+                "year": "2012",
+                "population": 6161289,
+                "internet_users_percentage": 20.3214,
+                "broadband_subscriptions": 242000
+            },
+            {
+                "year": "2011",
+                "population": 6137349,
+                "internet_users_percentage": 18.9,
+                "broadband_subscriptions": 206000
+            },
+            {
+                "year": "2010",
+                "population": 6114034,
+                "internet_users_percentage": 15.9,
+                "broadband_subscriptions": 175000
+            },
+            {
+                "year": "2009",
+                "population": 6091188,
+                "internet_users_percentage": 12.11,
+                "broadband_subscriptions": 149000
+            },
+            {
+                "year": "2008",
+                "population": 6068099,
+                "internet_users_percentage": 10.08,
+                "broadband_subscriptions": 123000
+            },
+            {
+                "year": "2007",
+                "population": 6044131,
+                "internet_users_percentage": 6.11,
+                "broadband_subscriptions": 89800
+            },
+            {
+                "year": "2006",
+                "population": 6034436,
+                "internet_users_percentage": 5.5,
+                "broadband_subscriptions": 61500
+            },
+            {
+                "year": "2005",
+                "population": 6037817,
+                "internet_users_percentage": 4.2,
+                "broadband_subscriptions": 42300
+            },
+            {
+                "year": "2004",
+                "population": 6035655,
+                "internet_users_percentage": 3.2,
+                "broadband_subscriptions": 29300
+            },
+            {
+                "year": "2003",
+                "population": 6026849,
+                "internet_users_percentage": 2.5,
+                "broadband_subscriptions": 19600
+            },
+            {
+                "year": "2002",
+                "population": 6011275,
+                "internet_users_percentage": 1.9,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2001",
+                "population": 5988095,
+                "internet_users_percentage": 1.5,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2000",
+                "population": 5958482,
+                "internet_users_percentage": 1.1774,
+                "broadband_subscriptions": null
+            }
+        ]
+    },
+    "URY": {
+        "country_name": "Uruguay",
+        "data": [
+            {
+                "year": "2021",
+                "population": 3426260,
+                "internet_users_percentage": 87.6444,
+                "broadband_subscriptions": 1110000
+            },
+            {
+                "year": "2020",
+                "population": 3429086,
+                "internet_users_percentage": 85.471,
+                "broadband_subscriptions": 1060000
+            },
+            {
+                "year": "2019",
+                "population": 3428409,
+                "internet_users_percentage": 83.3515,
+                "broadband_subscriptions": 1010000
+            },
+            {
+                "year": "2018",
+                "population": 3427042,
+                "internet_users_percentage": 80.7268,
+                "broadband_subscriptions": 977000
+            },
+            {
+                "year": "2017",
+                "population": 3422200,
+                "internet_users_percentage": 70.3224,
+                "broadband_subscriptions": 953000
+            },
+            {
+                "year": "2016",
+                "population": 3413766,
+                "internet_users_percentage": 66.4,
+                "broadband_subscriptions": 922000
+            },
+            {
+                "year": "2015",
+                "population": 3402818,
+                "internet_users_percentage": 64.5708,
+                "broadband_subscriptions": 901000
+            },
+            {
+                "year": "2014",
+                "population": 3391662,
+                "internet_users_percentage": 61.4625,
+                "broadband_subscriptions": 840000
+            },
+            {
+                "year": "2013",
+                "population": 3381180,
+                "internet_users_percentage": 57.69,
+                "broadband_subscriptions": 737000
+            },
+            {
+                "year": "2012",
+                "population": 3371133,
+                "internet_users_percentage": 54.4538,
+                "broadband_subscriptions": 581000
+            },
+            {
+                "year": "2011",
+                "population": 3361637,
+                "internet_users_percentage": 51.4047,
+                "broadband_subscriptions": 473000
+            },
+            {
+                "year": "2010",
+                "population": 3352651,
+                "internet_users_percentage": 46.4,
+                "broadband_subscriptions": 384000
+            },
+            {
+                "year": "2009",
+                "population": 3344156,
+                "internet_users_percentage": 41.8,
+                "broadband_subscriptions": 317000
+            },
+            {
+                "year": "2008",
+                "population": 3336126,
+                "internet_users_percentage": 39.3,
+                "broadband_subscriptions": 245000
+            },
+            {
+                "year": "2007",
+                "population": 3328651,
+                "internet_users_percentage": 34,
+                "broadband_subscriptions": 165000
+            },
+            {
+                "year": "2006",
+                "population": 3322282,
+                "internet_users_percentage": 29.4,
+                "broadband_subscriptions": 107000
+            },
+            {
+                "year": "2005",
+                "population": 3317665,
+                "internet_users_percentage": 20.0882,
+                "broadband_subscriptions": 48500
+            },
+            {
+                "year": "2004",
+                "population": 3313801,
+                "internet_users_percentage": 17.0631,
+                "broadband_subscriptions": 27000
+            },
+            {
+                "year": "2003",
+                "population": 3310202,
+                "internet_users_percentage": 15.9371,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2002",
+                "population": 3306441,
+                "internet_users_percentage": 11.4195,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2001",
+                "population": 3300939,
+                "internet_users_percentage": 11.1214,
+                "broadband_subscriptions": null
+            },
+            {
+                "year": "2000",
+                "population": 3292224,
+                "internet_users_percentage": 10.5391,
+                "broadband_subscriptions": null
+            }
+        ]
+    },
+    "VEN": {
+        "country_name": "Venezuela, RB",
+        "data": [
+            {
+                "year": "2021",
+                "population": 28199867,
+                "internet_users_percentage": null,
+                "broadband_subscriptions": 2610000
+            },
+            {
+                "year": "2020",
+                "population": 28490453,
+                "internet_users_percentage": null,
+                "broadband_subscriptions": 2560000
+            },
+            {
+                "year": "2019",
+                "population": 28971683,
+                "internet_users_percentage": null,
+                "broadband_subscriptions": 2560000
+            },
+            {
+                "year": "2018",
+                "population": 29825653,
+                "internet_users_percentage": null,
+                "broadband_subscriptions": 2600000
+            },
+            {
+                "year": "2017",
+                "population": 30563433,
+                "internet_users_percentage": 61.6,
+                "broadband_subscriptions": 2610000
+            },
+            {
+                "year": "2016",
+                "population": 30741464,
+                "internet_users_percentage": 60,
+                "broadband_subscriptions": 2610000
+            },
+            {
+                "year": "2015",
+                "population": 30529716,
+                "internet_users_percentage": 58,
+                "broadband_subscriptions": 2590000
+            },
+            {
+                "year": "2014",
+                "population": 30193258,
+                "internet_users_percentage": 57,
+                "broadband_subscriptions": 2400000
+            },
+            {
+                "year": "2013",
+                "population": 29838021,
+                "internet_users_percentage": 54.9,
+                "broadband_subscriptions": 2230000
+            },
+            {
+                "year": "2012",
+                "population": 29470426,
+                "internet_users_percentage": 49.0501,
+                "broadband_subscriptions": 2040000
+            },
+            {
+                "year": "2011",
+                "population": 29096159,
+                "internet_users_percentage": 40.22,
+                "broadband_subscriptions": 1820000
+            },
+            {
+                "year": "2010",
+                "population": 28715022,
+                "internet_users_percentage": 37.37,
+                "broadband_subscriptions": 1670000
+            },
+            {
+                "year": "2009",
+                "population": 28327892,
+                "internet_users_percentage": 32.7,
+                "broadband_subscriptions": 1400000
+            },
+            {
+                "year": "2008",
+                "population": 27933833,
+                "internet_users_percentage": 25.88,
+                "broadband_subscriptions": 1120000
+            },
+            {
+                "year": "2007",
+                "population": 27525097,
+                "internet_users_percentage": 20.83,
+                "broadband_subscriptions": 858000
+            },
+            {
+                "year": "2006",
+                "population": 27102081,
+                "internet_users_percentage": 15.2247,
+                "broadband_subscriptions": 538000
+            },
+            {
+                "year": "2005",
+                "population": 26668785,
+                "internet_users_percentage": 12.553,
+                "broadband_subscriptions": 356000
+            },
+            {
+                "year": "2004",
+                "population": 26226927,
+                "internet_users_percentage": 8.40447,
+                "broadband_subscriptions": 210000
+            },
+            {
+                "year": "2003",
+                "population": 25782029,
+                "internet_users_percentage": 7.49996,
+                "broadband_subscriptions": 117000
+            },
+            {
+                "year": "2002",
+                "population": 25330929,
+                "internet_users_percentage": 4.91045,
+                "broadband_subscriptions": 78200
+            },
+            {
+                "year": "2001",
+                "population": 24880203,
+                "internet_users_percentage": 4.636,
+                "broadband_subscriptions": 36600
+            },
+            {
+                "year": "2000",
+                "population": 24427729,
+                "internet_users_percentage": 3.3596,
+                "broadband_subscriptions": 4470
+            }
+        ]
+    }
+}
