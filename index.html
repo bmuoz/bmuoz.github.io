@@ -9,8 +9,11 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <style>
         body {
-            background-color: #919191;
             font-family: 'Raleway';
+            font-size: 16px;
+            background-image: url('https://img.freepik.com/vector-gratis/fondo-tecnologia-digital-alambre-malla-red_1017-27428.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         header {
@@ -24,7 +27,7 @@
 
         .logo {
             font-family: 'Segoe UI', sans-serif;
-            font-size: 2em; /* Aumentado para mayor visibilidad */
+            font-size: 2em;
         }
 
         .link-button {
@@ -40,8 +43,8 @@
         }
 
         .link-button img {
-            width: 40px; /* Tamaño fijo para la imagen */
-            height: 40px; /* Tamaño fijo para la imagen */
+            width: 40px;
+            height: 40px;
         }
 
         .main-content {
@@ -72,7 +75,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            background-color: #d1d1d1;
+            background-color: #007bff;
             padding: 20px;
             border-radius: 8px;
         }
@@ -86,18 +89,18 @@
             background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
-            flex: 2; /* Aumentado para que el cuadro de texto ocupe más espacio */
-            min-width: 300px; /* Ancho mínimo */
-            max-width: 600px; /* Ancho máximo */
+            flex: 2;
+            min-width: 300px;
+            max-width: 600px;
         }
 
         .vector-image {
-            width: 100%; /* Ajusta al 100% del contenedor */
-            height: auto; /* Mantiene la proporción */
-            max-height: 400px; /* Ajusta la altura máxima */
-            object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
             border-radius: 8px;
-            flex: 1; /* Asegura que la imagen no ocupe mucho espacio */
+            flex: 1; 
         }
 
         .footer-links a {
@@ -137,34 +140,42 @@
 <section class="main-content">
     <div class="sidebar">
         <h2>Índice</h2>
-        <p>Explora las características del acceso a internet en países de Latinoamérica.</p>
         <ul>
-            <li><a href="#chart-container">Ver gráfico</a></li>
-            <li><a href="#info-adicional">Información Adicional</a></li>
-            <li><a href="#mas-detalles">Más detalles</a></li>
+            <li><a href="#Grafico">Ver gráfico</a></li>
+            <li><a href="#Descripcion">Descripción</a></li>
+            <li><a href="#Situacion-en-Chile">Situación en Chile</a></li>
+        </ul>
+        <h2>Fuente de Datos</h2>
+        <ul>
+            <li><a class="data-button" href="https://data.worldbank.org/" target="_blank">World Bank</a></li>
+        </ul>
+        <h2>Bibliografía</h2>
+        <ul>
+            <li><a class="data-button" href="https://csirt.gob.cl/documents/4520/Historia-de-Internet-en-Chile.pdf" target="_blank">La Historia de Internet en Chile</a></li>
+            <li><a class="data-button" href="https://obtienearchivo.bcn.cl/obtienearchivo?id=repositorio/10221/28625/1/BCN_Poli__ticas_para_enfrentar_la_brecha_digital.pdf" target="_blank">Políticas del Estado para enfrentar la brecha digital en Chile</a></li>
         </ul>
     </div>
     <div class="content">
         <h1>Introducción</h1>
-        <p>Descubre cómo ha evolucionado la velocidad de internet en Latinoamérica.</p>
+        <p style="font-size: 20px;">En el presente proyecto tenemos como objetivo mostrar y comunicar las cifras del porcentaje de la población tanto chilena como latinoamericana en cuanto al acceso al internet. La motivación que hay detrás de esta investigación surge con los constantes rumores que suelen advertirse acerca del crecimiento tecnológico que ha tenido nuestro país con respecto a los otros países de la región. Con esta visualización, pondremos fin a todas las incertidumbres, y lograremos ver los hechos reales de la situación.</p>
         <div id="chart-container">
             <div id="chart"></div>
         </div>
         <div class="info-images-container">
             <div class="info-boxes" id="info-adicional">
                 <div class="info-box">
-                    <h2>Información Adicional</h2>
-                    <p>La velocidad de internet ha mejorado en los últimos años en la mayoría de los países de la región. Sin embargo, la disponibilidad y calidad del servicio varían significativamente.</p>
-                    <p>Este gráfico muestra un análisis de la velocidad de banda ancha promedio en diferentes países de Latinoamérica.</p>
+                    <h2>Descripción</h2>
+                    <p>Este análisis, realizado gracias a datos proporcionados por World Bank, nos muestra que en general la región ha experimentado un aumento de la población que accede al internet. Si vemos el promedio, notamos que la relación es casi lineal.</p>
+                    <p>Contamos con datos comparativos para medir las tendencias de la región, incluyendo una diversidad de países como Brasil, Uruguay, Perú o Nicaragua. Además, añadimos un dato extra, que representa el promedio de todos los países en el porcentaje de población con acceso a internet por cada año.</p>
+                    <p>Sin embargo, a lo largo de gran parte del gráfico podemos encontrar a Chile como el líder en cuanto a su porcentaje de la población con acceso a internet, destacando su supremacía en los periodos 2000-2006 y 2015-2018.</p>
                 </div>
                 <img src="https://concepto.de/wp-content/uploads/2024/06/internet.jpg" alt="Ilustración de conexión a internet" class="vector-image">
             </div>
             <div class="info-boxes" id="mas-detalles">
                 <div class="info-box">
-                    <h2>Más Detalles</h2>
-                    <p>El desarrollo de la infraestructura de internet es clave para reducir la brecha digital. La expansión de la conectividad sigue siendo un desafío en áreas rurales.</p>
-                    <p>Conoce más sobre estos datos en la fuente oficial.</p>
-                    <a class="data-button" href="https://data.worldbank.org/" target="_blank">Ver datos en World Bank</a>
+                    <h2>Situación en Chile</h2>
+                    <p>La preocupación del gobierno chileno por reducir la brecha digital se ha manifestado desde comienzos del siglo. El acceso a internet se comenzó a expandir rápidamente, pasando del 16,6% de la población que accedió a Internet en Chile en 2000, según datos de la Subtel. </p>
+                    <p>En el segundo semestre del año 2023, el 4G comienza a comercializarse por las empresas de telecomunicaciones. Además, se popularizaron programas de subsidio y financiamiento para llevar internet a áreas rurales, así como iniciativas para mejorar la conectividad en zonas de difícil acceso.</p>
                 </div>
                 <img src="https://enlinea.santotomas.cl/web/wp-content/uploads/sites/2/2018/05/chile-internet-744x445.jpg" alt="Ilustración de conectividad global" class="vector-image">
             </div>
