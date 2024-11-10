@@ -1,7 +1,7 @@
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
-        const selectedCountries = ['CHL', 'ARG', 'BRA', 'URY', 'PER', 'MEX', 'NIC', 'CUB'];
+        const selectedCountries = ['CHL', 'ARG', 'BRA', 'URY', 'PER', 'MEX', 'NIC', 'CUB', 'COL', 'CRI', 'DOM', 'ECU', 'GTM', 'HND', 'PAN', 'PRY', 'SLV', 'VEN'];
         const allCountries = Object.keys(data);
         const years = [];
         const countryData = {};
@@ -9,13 +9,9 @@ fetch('data.json')
 
         allCountries.forEach(countryCode => {
             data[countryCode].data.forEach(entry => {
-
                 if (entry.year >= 2000 && entry.year <= 2021) {
                     if (!averageData[entry.year]) {
-                        averageData[entry.year] = {
-                            total: 0,
-                            count: 0
-                        };
+                        averageData[entry.year] = { total: 0, count: 0 };
                     }
                     averageData[entry.year].total += entry.internet_users_percentage;
                     averageData[entry.year].count += 1;
@@ -61,7 +57,17 @@ fetch('data.json')
             'PER': '#d62728',
             'MEX': '#9467bd',
             'NIC': '#e377c2',
-            'CUB': '#7f7f7f'
+            'CUB': '#7f7f7f',
+            'COL': '#bcbd22',
+            'CRI': '#17becf',
+            'DOM': '#8c564b',
+            'ECU': '#e377c2',
+            'GTM': '#7f7f7f',
+            'HND': '#bcbd22',
+            'PAN': '#17becf',
+            'PRY': '#9467bd',
+            'SLV': '#e377c2',
+            'VEN': '#d62728'
         };
 
         selectedCountries.forEach(countryCode => {
@@ -69,15 +75,27 @@ fetch('data.json')
                 x: countryData[countryCode].years,
                 y: countryData[countryCode].internet_users_percentage,
                 mode: 'lines+markers',
-                name: countryData[countryCode].name,
+                name: countryData[countryCode].name,  // Asegurarse de que el 'name' contenga el nombre del país
                 line: {
                     width: countryData[countryCode].name === 'Chile' ? 6 : 2,
                     color: colors[countryCode]
                 },
-                hoverinfo: 'name+y'
+                hovertemplate: 
+                    '<b>%{fullData.name}</b><br>' +  // Usamos %{fullData.name} para asegurar que se muestre el nombre del país
+                    'Año: %{x}<br>' +
+                    'Usuarios de Internet: %{y}%<br>' +
+                    'Suscripciones Totales: %{customdata}<extra></extra>',  // Suscripciones de Banda Ancha desde customdata
+                customdata: data[countryCode].data.map(entry => entry.broadband_subscriptions),  // Mantenemos el customdata para las suscripciones
+                hoverinfo: 'x+y+name+customdata',  // Asegura que la información aparezca en el hover
+                visible: countryCode === 'CHL' ? true : false  // Solo Chile es visible al inicio
             };
             traces.push(trace);
         });
+        
+        
+        
+        
+        
 
         const averageTrace = {
             x: averageYears,
@@ -89,69 +107,104 @@ fetch('data.json')
                 color: '#000000',
                 dash: 'dash'
             },
-            hoverinfo: 'name+y'
+            hoverinfo: 'name+y',
+            visible: true  // Mostrar el promedio siempre
         };
         traces.push(averageTrace);
 
-const layout = {
-    title: 'Porcentaje de Población con Acceso a Internet en América Latina (2000-2021)',
-    xaxis: {
-        title: 'Año',
-        tickmode: 'linear',
-        tick0: 2000,
-        dtick: 1,
-        range: [2000, 2021]
-    },
-    yaxis: {
-        title: 'Porcentaje de Usuarios de Internet (%)',
-        range: [0, 100]
-    },
-    legend: {
-        x: 1,
-        y: 1,
-        title: {
-            text: 'Países'
-        }
-    },
-    annotations: [
-        {
-            x: 2003,
-            y: 25.3,
-            xref: 'x',
-            yref: 'y',
-            text: 'Chile dominaba el acceso a internet al principio del siglo',
-            showarrow: true,
-            arrowhead: 6,
-            ax: 30,
-            ay: -80,
-            font: {
-                color: '#000000',
-                size: 12
+        const layout = {
+            width: 1650,
+            height: 800,
+            hovermode: 'closest',
+            title: 'Porcentaje de Población con Acceso a Internet en América Latina (2000-2021)',
+            xaxis: {
+                title: 'Año',
+                tickmode: 'linear',
+                tick0: 2000,
+                dtick: 1,
+                range: [2000, 2021],  // Inicialmente muestra todo el período
+                rangeslider: {
+                    visible: true,
+                    range: [2000, 2021]  // Rango completo para el slider
+                },
+                fixedrange: false  // Permitir hacer zoom en el gráfico principal
             },
-            bgcolor: '#ffffff'
-        },
-        {
-            x: 2014,
-            y: 61,
-            xref: 'x',
-            yref: 'y',
-            text: 'Implementación del 4G',
-            showarrow: true,
-            arrowhead: 6,
-            ax: -20,
-            ay: -50,
-            font: {
-                color: '#000000',
-                size: 12
+            yaxis: {
+                title: 'Porcentaje de Usuarios de Internet (%)',
+                range: [0, 100],
+                fixedrange: false  // Permitir hacer zoom en el gráfico principal
             },
-            bgcolor: '#ffffff'
-        }
-
-    ]
-};
-
-        traces.push(traces.shift());
-        traces.push(traces.pop());
+            dragmode: 'zoom',  // Permitir zoom mediante selección
+            legend: {
+                x: 1,
+                y: 1,
+                title: {
+                    text: 'Simbología'
+                }
+            },
+            updatemenus: [{
+                buttons: [
+                    {
+                        method: 'restyle',
+                        args: [{'visible': [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true]}],  // Solo Chile y Promedio visibles
+                        label: 'Solo Chile'
+                    },
+                    {
+                        method: 'restyle',
+                        args: [{'visible': [true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, true, false, false, true]}],  // Cono Sur + promedio
+                        label: 'Cono Sur'
+                    },
+                    {
+                        method: 'restyle',
+                        args: [{'visible': [true, true, true, true, true, false, false, false, true, false, false, true, false, false, false, true, false, true, true]}],  // Sudamérica + promedio
+                        label: 'Sudamérica'
+                    },
+                    {
+                        method: 'restyle',
+                        args: [{'visible': [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]}],  // Toda América Latina + promedio
+                        label: 'Latinoamérica'
+                    }
+                ],
+                direction: 'down',
+                showactive: true
+            }],
+            annotations: [
+                {
+                    x: 2003,
+                    y: 25.3,
+                    xref: 'x',
+                    yref: 'y',
+                    text: 'Chile dominaba el acceso a internet al principio del siglo',
+                    showarrow: true,
+                    arrowhead: 6,
+                    ax: 30,
+                    ay: -80,
+                    font: {
+                        color: '#000000',
+                        size: 12
+                    },
+                    bgcolor: '#ffffff',
+                    visible: true  // Asociar con Chile
+                },
+                {
+                    x: 2014,
+                    y: 61,
+                    xref: 'x',
+                    yref: 'y',
+                    text: 'Implementación del 4G',
+                    showarrow: true,
+                    arrowhead: 6,
+                    ax: -20,
+                    ay: -50,
+                    font: {
+                        color: '#000000',
+                        size: 12
+                    },
+                    bgcolor: '#ffffff',
+                    visible: true  // Asociar con Chile
+                }
+            ]
+        };
 
         Plotly.newPlot('chart', traces, layout);
     })
