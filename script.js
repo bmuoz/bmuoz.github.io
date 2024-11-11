@@ -73,6 +73,7 @@ fetch('data.json')
                 release: 2.0  // Un largo tiempo de liberación para mantener el sonido
             }
         }).toDestination();
+        alertSynth.volume.value = -10;
         
         function mapPercentageToFrequency(percentage) {
             const minFrequency = 100;
@@ -172,13 +173,7 @@ fetch('data.json')
             'VEN': '#d62728'
         };
 
-        const playButton = document.getElementById('playSound');
 
-        // Añadir el evento de clic al botón
-        playButton.addEventListener('click', function() {
-            // Desactivar el botón después de hacer clic
-            playButton.disabled = true;
-        });
 
         selectedCountries.forEach(countryCode => {
             const trace = {
@@ -235,7 +230,8 @@ fetch('data.json')
                 range: [2000, 2021],  // Inicialmente muestra todo el período
                 rangeslider: {
                     visible: true,
-                    range: [2000, 2021]  // Rango completo para el slider
+                    range: [2000, 2021],  // Rango completo para el slider
+                    thickness: 0.15
                 },
                 fixedrange: false  // Permitir hacer zoom en el gráfico principal
             },

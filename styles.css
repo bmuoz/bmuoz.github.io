@@ -30,6 +30,7 @@ header {
 
 }
 
+
 /* Estilos para el botón */
 #playSound {
     background-color: #007bff; /* Mismo color que el header */
@@ -49,11 +50,7 @@ header {
     background-color: #0056b3; /* Color más oscuro cuando se pasa el ratón */
 }
 
-/* Estilo cuando el botón está deshabilitado */
-#playSound:disabled {
-    background-color: #cccccc; /* Color gris cuando el botón está deshabilitado */
-    cursor: not-allowed; /* Cambia el cursor a "no permitido" */
-}
+
 
 .link-button {
     display: inline-block;
@@ -78,12 +75,6 @@ header {
     gap: 20px;
 }
 
-.sidebar {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    border-radius: 8px;
-    width: 500px;
-}
 
 .content {
     flex-grow: 1;
@@ -103,37 +94,6 @@ header {
     height: 1200px;
 }
 
-.info-images-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: #007bff;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.info-boxes {
-    display: flex;
-    gap: 20px;
-}
-
-.info-box {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 2;
-    min-width: 300px;
-    max-width: 600px;
-}
-
-.vector-image {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-    flex: 1;
-}
 
 footer {
     background-color: #333333;
