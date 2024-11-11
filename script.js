@@ -48,6 +48,108 @@ fetch('data.json')
             });
         });
 
+        let synth = new Tone.MembraneSynth({
+            harmonicity: 3,  // Ajuste que controla la relación de frecuencia entre el portador y el modulador
+            modulationIndex: 10,  // Controla la cantidad de modulación
+            envelope: {
+                attack: 0.01,
+                decay: 0.2,
+                sustain: 0.1,
+                release: 1.2
+            },
+            modulation: {
+                type: "square"  // Onda cuadrada para un timbre más brillante
+            }
+        }).toDestination();
+        
+        let alertSynth = new Tone.Synth({  // Sonido adicional para el año 2015 (implementación del 4G)
+            oscillator: {
+                type: 'sine'  // Utilizamos un tono más limpio y claro
+            },
+            envelope: {
+                attack: 0.5,  // Un ataque más largo para hacerlo más notorio
+                decay: 0.5,
+                sustain: 0.5,
+                release: 2.0  // Un largo tiempo de liberación para mantener el sonido
+            }
+        }).toDestination();
+        
+        function mapPercentageToFrequency(percentage) {
+            const minFrequency = 100;
+            const maxFrequency = 1000;
+            const minPercentage = 0;
+            const maxPercentage = 100;
+            return (percentage - minPercentage) * (maxFrequency - minFrequency) / (maxPercentage - minPercentage) + minFrequency;
+        }
+        
+        // Función para animar y reproducir sonido en la línea de Chile
+        function playChileSonification(countryData) {
+            const chileData = countryData['CHL'];
+            const years = chileData.years;
+            const percentages = chileData.internet_users_percentage;
+        
+            let index = 21;
+        
+            // Agregar traza para el punto animado
+            Plotly.addTraces('chart', {
+                x: [], 
+                y: [], 
+                mode: 'markers',
+                marker: { 
+                    size: 15, 
+                    color: '#FFFFFF',  // Color blanco para el relleno
+                    line: {
+                        color: '#000000',  // Color negro para el borde
+                        width: 2  // Ancho del borde
+                    }
+                },
+                name: 'Punto en movimiento',
+                showlegend: false
+            });
+        
+            function animatePoint() {
+                if (index < 0) {
+                    // Eliminar la traza del punto animado al terminar
+                    Plotly.deleteTraces('chart', [traces.length - 1]);  
+                    return;  // Terminar la animación cuando llegue al final
+                }
+        
+                const year = years[index];
+                const percentage = percentages[index];
+                const frequency = mapPercentageToFrequency(percentage);
+        
+                // Verificar si es el año 2015 (implementación del 4G)
+                if (year === "2014") {
+                    // Reproducir un sonido largo y notorio cuando lleguemos al 4G
+                    alertSynth.triggerAttackRelease('C5', '2n');  // Tono largo en C5
+                } else {
+                    // Reproducir sonido normal
+                    synth.triggerAttackRelease(frequency, '8n');
+                }
+        
+                // Actualizar el punto en la traza temporal sin modificar la línea original
+                Plotly.update('chart', {
+                    x: [[year]],  // Formato de array dentro de array
+                    y: [[percentage]]  // Formato de array dentro de array
+                }, {}, [traces.length - 1]);  // Apuntar a la nueva traza (última traza agregada)
+        
+                index = index - 1;
+                setTimeout(animatePoint, 600);  // Ajustar la velocidad de la animación
+            }
+        
+            // Iniciar la animación
+            animatePoint();
+        }
+        
+        
+
+        
+
+        // Asignar evento al botón
+        document.getElementById('playSound').addEventListener('click', function() {
+            playChileSonification(countryData);
+        });
+
         const traces = [];
         const colors = {
             'CHL': '#FF0000',
@@ -69,6 +171,14 @@ fetch('data.json')
             'SLV': '#e377c2',
             'VEN': '#d62728'
         };
+
+        const playButton = document.getElementById('playSound');
+
+        // Añadir el evento de clic al botón
+        playButton.addEventListener('click', function() {
+            // Desactivar el botón después de hacer clic
+            playButton.disabled = true;
+        });
 
         selectedCountries.forEach(countryCode => {
             const trace = {
@@ -130,7 +240,7 @@ fetch('data.json')
                 fixedrange: false  // Permitir hacer zoom en el gráfico principal
             },
             yaxis: {
-                title: 'Porcentaje de Usuarios de Internet (%)',
+                title: 'Porcentaje de Usuarios de Internet',
                 range: [0, 100],
                 fixedrange: false  // Permitir hacer zoom en el gráfico principal
             },
@@ -202,6 +312,7 @@ fetch('data.json')
                     },
                     bgcolor: '#ffffff',
                     visible: true  // Asociar con Chile
+                    
                 }
             ]
         };

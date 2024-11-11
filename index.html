@@ -7,135 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <style>
-        body {
-            font-family: 'Raleway';
-            font-size: 16px;
-            background-image: url('https://img.freepik.com/vector-premium/fondo-blanco-circuito-tecnologia-azul_583398-369.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        header {
-            background-color: #007bff;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-
-        .logo {
-            font-family: 'Segoe UI', sans-serif;
-            font-size: 2em;
-        }
-
-        .link-button {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            margin-left: auto;
-            margin-right: 0;
-            background-color: transparent;
-            border: none;
-            padding: 0;
-            cursor: pointer;
-        }
-
-        .link-button img {
-            width: 40px;
-            height: 40px;
-        }
-
-        .main-content {
-            display: flex;
-            padding: 20px;
-            gap: 20px;
-        }
-
-        .sidebar {
-            background-color: rgba(255, 255, 255, 0.7);
-            padding: 20px;
-            border-radius: 8px;
-            width: 500px;
-        }
-
-        .content {
-            flex-grow: 1;
-        }
-
-        .chart-container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            width: 100%;
-            height: 1200px;
-        }   
-
-        .chart {
-            width: 100%;
-            height: 1200px;
-        }
-
-        .info-images-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            background-color: #007bff;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .info-boxes {
-            display: flex;
-            gap: 20px;
-        }
-
-        .info-box {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            flex: 2;
-            min-width: 300px;
-            max-width: 600px;
-        }
-
-        .vector-image {
-            width: 100%;
-            height: auto;
-            max-height: 400px;
-            object-fit: cover;
-            border-radius: 8px;
-            flex: 1; 
-        }
-
-        .footer-links a {
-            margin-right: 10px;
-            text-decoration: none;
-            color: #007bff;
-        }
-
-        .footer-links {
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #333333; /* Gris oscuro del footer */
-            padding: 10px;
-            border-radius: 8px;
-            text-align: center;
-            color: #ffffff;
-            font-size: 1em; /* Tamaño de fuente consistente */
-        }
-
-        .data-button {
-            text-decoration: none;
-            color: #007bff;
-        }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/tone@14.8.35/build/Tone.js"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Referencia a la hoja de estilos -->
 </head>
 <body>
 <header>
@@ -146,66 +19,25 @@
 </header>
   
 <section class="main-content">
-    <div class="sidebar">
-        <h2>Índice</h2>
-        <ul>
-            <li><a href="#Grafico">Ver gráfico</a></li>
-            <li><a href="#Descripcion">Descripción</a></li>
-            <li><a href="#Situacion-en-Chile">Situación en Chile</a></li>
-        </ul>
-        <h2>Fuente de Datos</h2>
-        <ul>
-            <li><a class="data-button" href="https://data.worldbank.org/" target="_blank">World Bank</a></li>
-        </ul>
-        <h2>Bibliografía</h2>
-        <ul>
-            <li><a class="data-button" href="https://csirt.gob.cl/documents/4520/Historia-de-Internet-en-Chile.pdf" target="_blank">La Historia de Internet en Chile</a></li>
-            <li><a class="data-button" href="https://obtienearchivo.bcn.cl/obtienearchivo?id=repositorio/10221/28625/1/BCN_Poli__ticas_para_enfrentar_la_brecha_digital.pdf" target="_blank">Políticas del Estado para enfrentar la brecha digital en Chile</a></li>
-        </ul>
-    </div>
     <div class="content">
-        <h1>Introducción</h1>
-        <p style="font-size: 20px;">En el presente proyecto tenemos como objetivo mostrar y comunicar las cifras del porcentaje de la población tanto chilena como latinoamericana en cuanto al acceso al internet. La motivación que hay detrás de esta investigación surge con los constantes rumores que suelen advertirse acerca del gran crecimiento tecnológico que ha tenido nuestro país con respecto a los otros países de la región. Con esta visualización, pondremos fin a todas las incertidumbres, y lograremos ver los hechos reales de la situación.</p>
         <div id="chart-container">
             <div id="chart"></div>
-        </div>
-        <div class="info-images-container">
-            <div class="info-boxes" id="info-adicional">
-                <div class="info-box">
-                    <h2>Descripción</h2>
-                    <p>Este análisis, realizado gracias a datos proporcionados por World Bank, nos muestra que en general la región ha experimentado un aumento de la población que accede al internet. Si vemos el promedio, notamos que la relación es casi lineal.</p>
-                    <p>Contamos con datos comparativos para medir las tendencias de la región, incluyendo una diversidad de países como Brasil, Uruguay, Perú o Nicaragua. Además, añadimos un dato extra, que representa el promedio de todos los países en el porcentaje de población con acceso a internet por cada año.</p>
-                    <p>Sin embargo, a lo largo de gran parte del gráfico podemos encontrar a Chile como el líder en cuanto a su porcentaje de la población con acceso a internet, destacando su supremacía en los periodos 2000-2006 y 2015-2018.</p>
-                </div>
-                <img src="https://concepto.de/wp-content/uploads/2024/06/internet.jpg" alt="Ilustración de conexión a internet" class="vector-image">
-            </div>
-            <div class="info-boxes" id="mas-detalles">
-                <div class="info-box">
-                    <h2>Situación en Chile</h2>
-                    <p>La preocupación del gobierno chileno por reducir la brecha digital se ha manifestado desde comienzos del siglo XXI. El acceso a internet se comenzó a expandir rápidamente, pasando al 16,6% de la población que accedió a Internet en Chile en 2000, según datos de la Subtel. </p>
-                    <p>En el segundo semestre del año 2013, el 4G comienza a comercializarse por las empresas de telecomunicaciones. Además, se popularizaron programas de subsidio y financiamiento para llevar internet a áreas rurales, así como iniciativas para mejorar la conectividad en zonas de difícil acceso.</p>
-                </div>
-                <img src="https://enlinea.santotomas.cl/web/wp-content/uploads/sites/2/2018/05/chile-internet-744x445.jpg" alt="Ilustración de conectividad global" class="vector-image">
-            </div>
+            <button id="playSound">Reproducir Sonificación</button>
         </div>
     </div>
 </section>
 
 <footer>
     <div class="footer-links">
-        <a href="#">Hola</a>
-        <a href="#">Como</a>
-        <a href="#">Estas</a>
-        <a href="#">Bien</a>
-        <a href="#">Y tu</a>
-        <a href="#">Bien tambien</a>
-        <a href="#">Que bueno</a>
-        <a href="#">Bueno adios</a>
-        <a href="#">Adios</a>
+        <h2>Fuente de Datos</h2>
+        <ul>
+            <li><a class="data-button" href="https://data.worldbank.org/" target="_blank">World Bank</a></li>
+        </ul>
     </div>
-    <p>&copy; 2024 Acceso a Internet en Latinoamérica. Todos los derechos reservados.</p>
+
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
