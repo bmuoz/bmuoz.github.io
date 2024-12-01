@@ -1,3 +1,26 @@
+window.onload = function() {
+    const hash = window.location.hash.slice(1);
+
+    switch(hash) {
+        case 'chile':
+            // Mostrar solo Chile y Promedio
+            updateGraphVisibility([true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true]);
+            break;
+        case 'cono-sur':
+            // Mostrar Cono Sur + Promedio
+            updateGraphVisibility([true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, true, false, false, true]);
+            break;
+
+        default:
+            // Si no hay hash, muestra el estado por defecto
+            updateGraphVisibility([true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true]);
+    }
+};
+
+function updateGraphVisibility(visibilityArray) {
+    Plotly.restyle('your-plotly-div-id', 'visible', visibilityArray);
+}
+
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
@@ -303,7 +326,7 @@ fetch('data.json')
                         args: [{'visible': [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true]}],  // Solo Chile y Promedio visibles
                         label: 'Solo Chile',
                         execute: function() {
-                            window.history.pushState(null, null, '/chile');
+                            window.location.hash = 'chile';
                         }
                     },
                     {
@@ -311,7 +334,7 @@ fetch('data.json')
                         args: [{'visible': [true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, true, false, false, true]}],  // Cono Sur + promedio
                         label: 'Cono Sur',
                         execute: function() {
-                            window.location.href = '/cono-sur';
+                            window.location.hash = 'cono-sur';
                         }
                     },
                     {
