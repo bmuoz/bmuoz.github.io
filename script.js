@@ -311,7 +311,7 @@ fetch('data.json')
                         args: [{'visible': [true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, true, false, false, true]}],  // Cono Sur + promedio
                         label: 'Cono Sur',
                         execute: function() {
-                            window.history.pushState(null, null, '/cono-sur');
+                            window.location.href = '/cono-sur';
                         }
                     },
                     {
@@ -331,6 +331,38 @@ fetch('data.json')
                         }
                     },
                     // Agregar los otros países (Argentina, Brasil, Colombia, Perú)
+                    {
+                        method: 'restyle',
+                        args: [{'visible': [true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true]}],
+                        label: 'Argentina + Chile + Promedio',
+                        execute: function() {
+                            window.history.pushState(null, null, '/argentina');
+                        }
+                    },
+                    {
+                        method: 'restyle',
+                        args: [{'visible': [true, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true]}],
+                        label: 'Brasil + Chile + Promedio',
+                        execute: function() {
+                            window.history.pushState(null, null, '/brasil');
+                        }
+                    },
+                    {
+                        method: 'restyle',
+                        args: [{'visible': [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true]}],
+                        label: 'Colombia + Chile + Promedio',
+                        execute: function() {
+                            window.history.pushState(null, null, '/colombia');
+                        }
+                    },
+                    {
+                        method: 'restyle',
+                        args: [{'visible': [true, true, false, false, false, true]}],
+                        label: 'Perú + Chile + Promedioaaaaaaaaa',
+                        execute: function() {
+                            window.history.pushState(null, null, '/peru');
+                        }
+                    }
                 ],
                 direction: 'down',
                 showactive: true
