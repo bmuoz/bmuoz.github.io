@@ -144,6 +144,54 @@ fetch('data.json')
         
         
 
+        document.addEventListener('DOMContentLoaded', function () {
+            // Lista de países base
+            const baseCountry = 'Chile';
+            const otherCountries = ['Argentina', 'Brasil', 'Perú', 'Colombia'];
+            const avgCategory = 'Promedio';
+        
+            // Contenedor de filtros dinámicos
+            const filtersContainer = document.getElementById('filters');
+        
+            // Función para generar un enlace único
+            function createCategoryLink(categoryName) {
+                const baseUrl = window.location.origin + window.location.pathname;
+                const link = `${baseUrl}?category=${encodeURIComponent(categoryName)}`;
+                return link;
+            }
+        
+            // Crear filtros dinámicos
+            otherCountries.forEach((country) => {
+                const categoryName = `${country}`;
+                const link = createCategoryLink(categoryName);
+        
+                // Crear botón o enlace para cada filtro
+                const filterElement = document.createElement('a');
+                filterElement.href = link;
+                filterElement.textContent = `Filtro: ${baseCountry}, ${country}, ${avgCategory}`;
+                filterElement.className = 'filter-link'; // Agrega una clase para estilos
+        
+                // Agregar al contenedor
+                filtersContainer.appendChild(filterElement);
+            });
+        
+            // Evento para manejar clics en los filtros (opcional)
+            filtersContainer.addEventListener('click', (event) => {
+                if (event.target.tagName === 'A') {
+                    event.preventDefault();
+                    const category = new URL(event.target.href).searchParams.get('category');
+                    console.log(`Cargando datos para la categoría: ${category}`);
+                    loadChartData(category);
+                }
+            });
+        
+            // Función para cargar datos del gráfico según la categoría
+            function loadChartData(category) {
+                // Aquí se ajustaría la lógica para filtrar los datos y actualizar el gráfico.
+                console.log(`Filtrando datos para: ${category}`);
+                // Actualización de los gráficos según la categoría seleccionada
+            }
+        });
         
 
         // Asignar evento al botón
@@ -253,27 +301,41 @@ fetch('data.json')
                     {
                         method: 'restyle',
                         args: [{'visible': [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true]}],  // Solo Chile y Promedio visibles
-                        label: 'Solo Chile'
+                        label: 'Solo Chile',
+                        execute: function() {
+                            window.history.pushState(null, null, '/chile');
+                        }
                     },
                     {
                         method: 'restyle',
                         args: [{'visible': [true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, true, false, false, true]}],  // Cono Sur + promedio
-                        label: 'Cono Sur'
+                        label: 'Cono Sur',
+                        execute: function() {
+                            window.history.pushState(null, null, '/cono-sur');
+                        }
                     },
                     {
                         method: 'restyle',
                         args: [{'visible': [true, true, true, true, true, false, false, false, true, false, false, true, false, false, false, true, false, true, true]}],  // Sudamérica + promedio
-                        label: 'Sudamérica'
+                        label: 'Sudamérica',
+                        execute: function() {
+                            window.history.pushState(null, null, '/sudamerica');
+                        }
                     },
                     {
                         method: 'restyle',
                         args: [{'visible': [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]}],  // Toda América Latina + promedio
-                        label: 'Latinoamérica'
-                    }
+                        label: 'Latinoamérica',
+                        execute: function() {
+                            window.history.pushState(null, null, '/latinoamerica');
+                        }
+                    },
+                    // Agregar los otros países (Argentina, Brasil, Colombia, Perú)
                 ],
                 direction: 'down',
                 showactive: true
             }],
+            
             annotations: [
                 {
                     x: 2003,
