@@ -192,7 +192,7 @@ fetch('data.json')
                     'Suscripciones Totales: %{customdata}<extra></extra>',  // Suscripciones de Banda Ancha desde customdata
                 customdata: data[countryCode].data.map(entry => entry.broadband_subscriptions),  // Mantenemos el customdata para las suscripciones
                 hoverinfo: 'x+y+name+customdata',  // Asegura que la información aparezca en el hover
-                visible: countryCode === 'CHL' ? true : false  // Solo Chile es visible al inicio
+                visible: ['CHL', 'ARG', 'BRA', 'URY', 'PRY'].includes(countryCode) ? true : false
             };
             traces.push(trace);
         });
