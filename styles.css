@@ -21,7 +21,6 @@ header {
     font-size: 2em;
 }
 
-/* Estilos para el contenedor del gráfico */
 #chart-container {
     display: flex;
     flex-direction: column;
@@ -30,27 +29,22 @@ header {
 
 }
 
-
-/* Estilos para el botón */
 #playSound {
-    background-color: #007bff; /* Mismo color que el header */
-    color: white; /* Texto blanco */
-    font-family: 'Segoe UI', sans-serif; /* Mismo tipo de fuente que el logo */
-    font-size: 1.2em; /* Ajusta el tamaño de la fuente */
-    padding: 10px 20px; /* Espaciado alrededor del texto */
-    border: none; /* Elimina el borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Muestra el cursor como puntero al pasar el ratón */
-    transition: background-color 0.3s; /* Transición para el cambio de color */
-    margin-top: 20px; /* Margen respecto al gráfico */
+    background-color: #007bff;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
-/* Efecto de hover sobre el botón */
 #playSound:hover {
-    background-color: #0056b3; /* Color más oscuro cuando se pasa el ratón */
+    background-color: #0056b3;
 }
-
-
 
 .link-button {
     display: inline-block;
@@ -88,12 +82,6 @@ header {
     width: 100%;
     height: 1200px;
 }
-
-.chart {
-    width: 100%;
-    height: 1200px;
-}
-
 
 footer {
     background-color: #333333;
