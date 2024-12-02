@@ -7,6 +7,10 @@ fetch('data.json')
         const countryData = {};
         const averageData = {};
 
+        const config = {
+            responsive: true
+        };
+
         allCountries.forEach(countryCode => {
             data[countryCode].data.forEach(entry => {
                 if (entry.year >= 2000 && entry.year <= 2021) {
@@ -204,8 +208,6 @@ fetch('data.json')
         traces.push(averageTrace);
 
         const layout = {
-            width: 1650,
-            height: 800,
             hovermode: 'closest',
             title: 'Porcentaje de Población con Acceso a Internet en América Latina (2000-2021)',
             xaxis: {
@@ -268,7 +270,7 @@ fetch('data.json')
             ]
         };
 
-        Plotly.newPlot('chart', traces, layout);
+        Plotly.newPlot('chart', traces, layout, config);
     })
     .catch(error => {
         console.error('Error al cargar los datos:', error);
