@@ -14,6 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: white;
+    width: 200%;
 }
 
 .logo {
@@ -88,6 +89,7 @@ footer {
     color: #ffffff;
     font-size: 1em;
     text-align: center;
+    width: 200%;
 }
 
 
@@ -153,63 +155,4 @@ footer p {
 
 #filters a:hover {
     text-decoration: underline;
-}
-
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .logo {
-        font-size: 1.2em;
-        margin-bottom: 10px;
-    }
-
-    #filters ul {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
-    #filters li {
-        margin: 5px 0;
-    }
-
-    #chart-container {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    footer {
-        padding: 15px;
-    }
-
-    .footer-links {
-        margin-top: 10px;
-    }
-
-    .footer-links a {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        font-size: 1.1em;
-    }
-
-    #filters ul {
-        padding: 0;
-        margin-top: 10px;
-    }
-
-    #filters li {
-        margin: 5px 0;
-        text-align: center;
-    }
-
-    .footer-links a {
-        font-size: 12px;
-    }
 }
