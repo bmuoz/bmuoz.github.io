@@ -49,8 +49,8 @@ fetch('data.json')
         });
 
         let synth = new Tone.MembraneSynth({
-            harmonicity: 3,  // Ajuste que controla la relación de frecuencia entre el portador y el modulador
-            modulationIndex: 10,  // Controla la cantidad de modulación
+            harmonicity: 3,
+            modulationIndex: 10, 
             envelope: {
                 attack: 0.01,
                 decay: 0.2,
@@ -58,19 +58,19 @@ fetch('data.json')
                 release: 1.2
             },
             modulation: {
-                type: "square"  // Onda cuadrada para un timbre más brillante
+                type: "square"
             }
         }).toDestination();
         
-        let alertSynth = new Tone.Synth({  // Sonido adicional para el año 2015 (implementación del 4G)
+        let alertSynth = new Tone.Synth({
             oscillator: {
-                type: 'sine'  // Utilizamos un tono más limpio y claro
+                type: 'sine'
             },
             envelope: {
-                attack: 0.5,  // Un ataque más largo para hacerlo más notorio
+                attack: 0.5,
                 decay: 0.5,
                 sustain: 0.5,
-                release: 2.0  // Un largo tiempo de liberación para mantener el sonido
+                release: 2.0 
             }
         }).toDestination();
         alertSynth.volume.value = -10;
@@ -83,7 +83,6 @@ fetch('data.json')
             return (percentage - minPercentage) * (maxFrequency - minFrequency) / (maxPercentage - minPercentage) + minFrequency;
         }
         
-        // Función para animar y reproducir sonido en la línea de Chile
         function playChileSonification(countryData) {
             const chileData = countryData['CHL'];
             const years = chileData.years;
@@ -91,17 +90,16 @@ fetch('data.json')
         
             let index = 21;
         
-            // Agregar traza para el punto animado
             Plotly.addTraces('chart', {
                 x: [], 
                 y: [], 
                 mode: 'markers',
                 marker: { 
                     size: 15, 
-                    color: '#FFFFFF',  // Color blanco para el relleno
+                    color: '#FFFFFF',
                     line: {
-                        color: '#000000',  // Color negro para el borde
-                        width: 2  // Ancho del borde
+                        color: '#000000',
+                        width: 2
                     }
                 },
                 name: 'Punto en movimiento',
@@ -110,43 +108,34 @@ fetch('data.json')
         
             function animatePoint() {
                 if (index < 0) {
-                    // Eliminar la traza del punto animado al terminar
                     Plotly.deleteTraces('chart', [traces.length - 1]);  
-                    return;  // Terminar la animación cuando llegue al final
+                    return;
                 }
         
                 const year = years[index];
                 const percentage = percentages[index];
                 const frequency = mapPercentageToFrequency(percentage);
         
-                // Verificar si es el año 2015 (implementación del 4G)
                 if (year === "2014") {
-                    // Reproducir un sonido largo y notorio cuando lleguemos al 4G
-                    alertSynth.triggerAttackRelease('C5', '2n');  // Tono largo en C5
+                    alertSynth.triggerAttackRelease('C5', '2n');
                 } else {
-                    // Reproducir sonido normal
                     synth.triggerAttackRelease(frequency, '8n');
                 }
         
-                // Actualizar el punto en la traza temporal sin modificar la línea original
                 Plotly.update('chart', {
-                    x: [[year]],  // Formato de array dentro de array
-                    y: [[percentage]]  // Formato de array dentro de array
-                }, {}, [traces.length - 1]);  // Apuntar a la nueva traza (última traza agregada)
+                    x: [[year]],
+                    y: [[percentage]]
+                }, {}, [traces.length - 1]);
         
                 index = index - 1;
-                setTimeout(animatePoint, 600);  // Ajustar la velocidad de la animación
+                setTimeout(animatePoint, 600);
             }
         
-            // Iniciar la animación
             animatePoint();
         }
         
-        
+    
 
-        
-
-        // Asignar evento al botón
         document.getElementById('playSound').addEventListener('click', function() {
             playChileSonification(countryData);
         });
@@ -180,25 +169,22 @@ fetch('data.json')
                 x: countryData[countryCode].years,
                 y: countryData[countryCode].internet_users_percentage,
                 mode: 'lines+markers',
-                name: countryData[countryCode].name,  // Asegurarse de que el 'name' contenga el nombre del país
+                name: countryData[countryCode].name,
                 line: {
                     width: countryData[countryCode].name === 'Chile' ? 6 : 2,
                     color: colors[countryCode]
                 },
                 hovertemplate: 
-                    '<b>%{fullData.name}</b><br>' +  // Usamos %{fullData.name} para asegurar que se muestre el nombre del país
+                    '<b>%{fullData.name}</b><br>' +  
                     'Año: %{x}<br>' +
                     'Usuarios de Internet: %{y}%<br>' +
-                    'Suscripciones Totales: %{customdata}<extra></extra>',  // Suscripciones de Banda Ancha desde customdata
-                customdata: data[countryCode].data.map(entry => entry.broadband_subscriptions),  // Mantenemos el customdata para las suscripciones
-                hoverinfo: 'x+y+name+customdata',  // Asegura que la información aparezca en el hover
-                visible: ['CHL', 'ARG', 'BRA', 'URY', 'PRY'].includes(countryCode) ? true : false
+                    'Suscripciones Totales: %{customdata}<extra></extra>', 
+                customdata: data[countryCode].data.map(entry => entry.broadband_subscriptions),
+                hoverinfo: 'x+y+name+customdata',
+                visible: ['CHL', 'ARG'].includes(countryCode) ? true : false
             };
             traces.push(trace);
         });
-        
-        
-        
         
         
 
@@ -213,7 +199,7 @@ fetch('data.json')
                 dash: 'dash'
             },
             hoverinfo: 'name+y',
-            visible: true  // Mostrar el promedio siempre
+            visible: true
         };
         traces.push(averageTrace);
 
@@ -227,20 +213,15 @@ fetch('data.json')
                 tickmode: 'linear',
                 tick0: 2000,
                 dtick: 1,
-                range: [2000, 2021],  // Inicialmente muestra todo el período
-                rangeslider: {
-                    visible: true,
-                    range: [2000, 2021],  // Rango completo para el slider
-                    thickness: 0.15
-                },
-                fixedrange: false  // Permitir hacer zoom en el gráfico principal
+                range: [2000, 2021],
+                fixedrange: false
             },
             yaxis: {
                 title: 'Porcentaje de Usuarios de Internet',
                 range: [0, 100],
-                fixedrange: false  // Permitir hacer zoom en el gráfico principal
+                fixedrange: false
             },
-            dragmode: 'zoom',  // Permitir zoom mediante selección
+            dragmode: 'zoom',
             legend: {
                 x: 1,
                 y: 1,
@@ -248,32 +229,6 @@ fetch('data.json')
                     text: 'Simbología'
                 }
             },
-            updatemenus: [{
-                buttons: [
-                    {
-                        method: 'restyle',
-                        args: [{'visible': [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true]}],  // Solo Chile y Promedio visibles
-                        label: 'Solo Chile'
-                    },
-                    {
-                        method: 'restyle',
-                        args: [{'visible': [true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, true, false, false, true]}],  // Cono Sur + promedio
-                        label: 'Cono Sur'
-                    },
-                    {
-                        method: 'restyle',
-                        args: [{'visible': [true, true, true, true, true, false, false, false, true, false, false, true, false, false, false, true, false, true, true]}],  // Sudamérica + promedio
-                        label: 'Sudamérica'
-                    },
-                    {
-                        method: 'restyle',
-                        args: [{'visible': [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]}],  // Toda América Latina + promedio
-                        label: 'Latinoamérica'
-                    }
-                ],
-                direction: 'down',
-                showactive: true
-            }],
             annotations: [
                 {
                     x: 2003,
@@ -290,7 +245,7 @@ fetch('data.json')
                         size: 12
                     },
                     bgcolor: '#ffffff',
-                    visible: true  // Asociar con Chile
+                    visible: true
                 },
                 {
                     x: 2014,
@@ -307,7 +262,7 @@ fetch('data.json')
                         size: 12
                     },
                     bgcolor: '#ffffff',
-                    visible: true  // Asociar con Chile
+                    visible: true
                     
                 }
             ]

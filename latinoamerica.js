@@ -181,7 +181,7 @@ fetch('data.json')
                     'Suscripciones Totales: %{customdata}<extra></extra>', 
                 customdata: data[countryCode].data.map(entry => entry.broadband_subscriptions),
                 hoverinfo: 'x+y+name+customdata',
-                visible: ['CHL'].includes(countryCode) ? true : false
+                visible: ['CHL', 'ARG', 'BRA', 'URY', 'PER', 'MEX', 'NIC', 'CUB', 'COL', 'CRI', 'DOM', 'ECU', 'GTM', 'HND', 'PAN', 'PRY', 'SLV', 'VEN'].includes(countryCode) ? true : false
             };
             traces.push(trace);
         });
